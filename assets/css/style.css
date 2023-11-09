@@ -27,3 +27,47 @@ main {
     padding: 25px;
 
 }
+
+#about-game {
+    letter-spacing: 1px;
+    padding-bottom: 15px;
+
+}
+
+#answer-buttons {
+    padding: 25px;
+    display: block;
+}
+
+#answer-buttons button {
+
+    padding: 10px 0 10px 0;
+    margin: 5px auto 5px auto;
+    width: 50%;
+}
+
+@media screen and (max-width: 800px) {
+    main {
+        width: 85%;
+        transition: 1s;
+    }
+
+    #anser-buttons button {
+        width: 85%;
+        transition: 1s;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    main {
+        margin-left: 15px;
+        margin-right: 15px;
+        width: 85%;
+        transition: 1s;
+    }
+
+    #anser-buttons button {
+        width: 85%;
+        transition: 1s;
+    }
+}
