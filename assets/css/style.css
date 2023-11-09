@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: rgb(255, 212, 133);
+    background-color: rgb(255, 232, 189);
 }
 
 header img {
@@ -19,19 +19,25 @@ header img {
 
 }
 
-main {
+#main-div {
     background-color: rgb(170, 142, 197);
     width: 50%;
-    height: 65%;
+    height: 75%;
     border-radius: 25px;
     padding: 25px;
+    
 
 }
 
 #about-game {
     letter-spacing: 1px;
     padding-bottom: 15px;
+    width: 85%;
 
+}
+
+#about-game h1 {
+    margin-bottom: 25px;
 }
 
 #answer-buttons {
@@ -39,11 +45,23 @@ main {
     display: block;
 }
 
-#answer-buttons button {
-
+.button {
     padding: 10px 0 10px 0;
     margin: 5px auto 5px auto;
     width: 50%;
+    background-color: rgb(93, 64, 121);
+    border-radius: 25px;
+    border-color: rgb(255, 156, 7);
+}
+
+.start-button, .next-button {
+    padding: 10px 0 10px 0;
+    margin: 5px 10px 5px 10px;
+    width: 33%;
+    background-color: rgb(93, 64, 121);
+    border-radius: 25px;
+    border-color: rgb(255, 156, 7);
+
 }
 
 @media screen and (max-width: 800px) {

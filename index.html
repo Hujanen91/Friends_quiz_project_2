@@ -18,6 +18,7 @@
 <body>
     <header><img src="assets/images/friends_quiz_logo.png" alt="logo with the text 'Friends quiz'"></header>
     <main>
+        <div id="main-div">
         <div id="about-game">
             <h1>Welcome to the Friends Quiz!</h1>
             <p>This quiz pops up on your device like a surprise guest appearance from Ugly Naked Guy. Questions appear
@@ -39,6 +40,19 @@
                     <button class="button">Answer 4</button>
                 </div>
                 </div>
+            </div>
+        
+
+            <div id="results-container">
+                    <button class="timer-score" id="timer">Timer</button>
+                    <button class="timer-score" id="score">Score: <span id="score-value">0</span></button>
+                </div>
+            
+
+            <div class="start-next">
+                <button class="start-button" id="start-button">Sure, let's go!</button>
+                <button class="next-button hide" id="next-button">Next Question</button>
+            </div>
             </div>
         </div>
     </main>
