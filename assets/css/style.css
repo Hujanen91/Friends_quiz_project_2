@@ -3,10 +3,27 @@
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     color: rgb(255, 255, 255);
     text-align: center;
-    
-
 }
 
 body {
     background-color: rgb(255, 212, 133);
+}
+
+header img {
+    width: 50%;
+    height: 35%;
+    background-color: rgb(170, 142, 197);
+    margin: 50px 0 25px 0;
+    border-radius: 50%;
+    padding: 25px;
+
+}
+
+main {
+    background-color: rgb(170, 142, 197);
+    width: 50%;
+    height: 65%;
+    border-radius: 25px;
+    padding: 25px;
+
 }
