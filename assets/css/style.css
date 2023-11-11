@@ -25,6 +25,7 @@ header img {
     height: 75%;
     border-radius: 25px;
     padding: 25px;
+    margin-bottom: 25px;
     
 
 }
@@ -41,51 +42,127 @@ header img {
 }
 
 #answer-buttons {
-    padding: 25px;
+    padding: 10px;
     display: block;
 }
 
 .button {
     padding: 10px 0 10px 0;
     margin: 5px auto 5px auto;
-    width: 50%;
+    width: 75%;
     background-color: rgb(93, 64, 121);
     border-radius: 25px;
     border-color: rgb(255, 156, 7);
 }
 
-.start-button, .next-button {
+.start-button, .rules-button {
     padding: 10px 0 10px 0;
     margin: 5px 10px 5px 10px;
     width: 33%;
     background-color: rgb(93, 64, 121);
     border-radius: 25px;
     border-color: rgb(255, 156, 7);
-
 }
+
+.timer-score {
+    padding: 10px 0 10px 0;
+    margin: 5px 10px 5px 10px;
+    width: 33%;
+    background-color: rgb(93, 64, 121);
+    border-radius: 25px;
+    border-color: rgb(255, 156, 7);
+}
+
+@media screen and (max-width: 1200px) {
+    .button {
+            width: 100%;
+            transition: 1s;
+        }
 
 @media screen and (max-width: 800px) {
+header img {
+        width: 70%;
+        height: 35%;
+    }
+
     main {
         width: 85%;
         transition: 1s;
     }
 
-    #anser-buttons button {
-        width: 85%;
+    #main-div {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .button {
+        width: 100%;
         transition: 1s;
     }
-}
 
+    #timer {
+        width: 35%;
+    }
+
+    #score {
+        width: 35%;
+    }
+}
 @media screen and (max-width: 600px) {
+    header img {
+        width: 70%;
+        height: 35%;
+    }
+    
     main {
-        margin-left: 15px;
-        margin-right: 15px;
         width: 85%;
         transition: 1s;
     }
 
-    #anser-buttons button {
-        width: 85%;
+    #main-div {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .button {
+        width: 100%;
         transition: 1s;
     }
-}
+    #timer {
+        width: 35%;
+    }
+        
+    #score {
+        width: 35%;
+        }
+    }
+
+@media screen and (max-width: 500px) {
+        header img {
+            width: 70%;
+            height: 35%;
+        }
+    
+        #main-div {
+            width: 90%;
+            padding: 10px;
+        }
+    
+        .button {
+            width: 100%;
+            transition: 1s;
+        }
+    
+        #timer {
+            width: 55%;
+        }
+    
+        #score {
+            width: 55%;   
+        }
+
+        .start-button,
+        .rules-button {
+            width: 55%;
+        }
+    }
