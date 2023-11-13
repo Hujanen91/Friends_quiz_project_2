@@ -7,6 +7,8 @@ const answerButton = document.getElementById('answer-buttons');
 const questionContainer = document.getElementById('question-container');
 const aboutGame = document.getElementById('about-game');
 const scoreValue = document.getElementById('scoreValue');
+const tryAgain = document.getElementById('try-again');
+const lightningRound = document.getElementById('lightning');
 const score = document.getElementById('score');
 let timer = document.getElementById('timer');
 
