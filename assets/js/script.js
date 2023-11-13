@@ -16,8 +16,15 @@ const lightningRound = document.getElementById('lightning');
 const score = document.getElementById('score');
 let timer = document.getElementById('timer');
 
+// Rules Modal from w3schools
+var modal = document.getElementById('myModal');
+var rules = document.getElementById('game-rules-button');
+var span = document.getElementsByClassName('close')[0];
+
 // Set timer for lightning round
 const timePerQuestion = 20;
+
+
 
 // Variables that is going to loop
 
@@ -28,7 +35,25 @@ questionContainer.classList.add('hide');
 tryAgainContainer.classList.add('hide');
 
 // Make start and rules visible
+startButton.addEventListener('click', runGame);
 
-function runGame();
+
+function runGame() {
+    startButton.classList.add('hide');
+}
+
+rules.onclick = function() {
+    modal.style.display = "block";
+}
+
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
 
 
