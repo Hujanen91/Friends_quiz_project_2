@@ -1,6 +1,7 @@
 * {
     margin: 0 auto;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
     color: rgb(255, 255, 255);
     text-align: center;
 }
@@ -11,6 +12,11 @@ body {
     background-repeat: no-repeat;
     background-size: 100%;
 }
+
+h1 {
+    font-size: 24px;
+}
+
 
 header img {
     width: 50%;
@@ -33,9 +39,8 @@ header img {
 
 #about-game {
     letter-spacing: 1px;
-    padding-bottom: 15px;
+    padding-bottom: 85px;
     width: 85%;
-
 }
 
 #about-game h1 {
