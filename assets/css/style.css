@@ -7,6 +7,9 @@
 
 body {
     background-color: rgb(255, 232, 189);
+    background-image: url(https://imageupload.io/ib/FiqvBE8iBeHTyUI_1699915348.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 header img {
@@ -16,7 +19,6 @@ header img {
     margin: 50px 0 25px 0;
     border-radius: 50%;
     padding: 25px;
-
 }
 
 #main-div {
@@ -26,7 +28,6 @@ header img {
     border-radius: 25px;
     padding: 25px;
     margin-bottom: 25px;
-    
 
 }
 
@@ -87,6 +88,7 @@ header img {
     margin: 15% auto;
     padding: 20px;
     border: 1px solid rgb(46, 31, 59);
+    border-radius: 25px;
     width: 35%;
     opacity: 90%;
 }
