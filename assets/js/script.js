@@ -8,7 +8,7 @@ const rulesButton = document.getElementById('game-rules-button');
 const answerButton = document.getElementById('answer-buttons');
 const resultContainer = document.getElementById('results-container');
 const questionContainer = document.getElementById('question-container');
-const tryAgainContainer = document.getElementById('try-again-container')
+const tryAgainContainer = document.getElementById('try-again-container');
 const aboutGame = document.getElementById('about-game');
 const scoreValue = document.getElementById('scoreValue');
 const tryAgain = document.getElementById('try-again');
@@ -30,30 +30,55 @@ const timePerQuestion = 20;
 
 
 // Hide results, try-again, lightning-round and question buttons
-resultContainer.classList.add('hide');
-questionContainer.classList.add('hide');
-tryAgainContainer.classList.add('hide');
+resultContainer.style.display = "none";
+questionContainer.style.display = "none";
+tryAgainContainer.style.display = "none";
 
-// Make start and rules visible
+// 
 startButton.addEventListener('click', runGame);
 
-
-function runGame() {
-    startButton.classList.add('hide');
-}
-
+// Show modal when rules are clicked
 rules.onclick = function() {
     modal.style.display = "block";
 }
 
+// Close modal when "x" is clicked
 span.onclick = function() {
     modal.style.display = "none";
 }
 
+// Close the modal when clicking outside the modal content
 window.onclick = function(event) {
     if (event.target == modal) {
         modal.style.display = "none";
     }
 }
 
+// Flag to check if the game is already in progress
+let isGameInProgress = false;
+
+// Run game
+function runGame() {
+        if (isGameInProgress) {
+            console.log("The game is already in progress!");
+            return;
+        }
+
+        isGameInProgress = true;
+
+        shuffledQuestions = questions.sort(() => Math.random() - 0.5);
+        currentQuestionIndex = 0;
+
+        currentScore = 0;
+        renderScore();
+
+        startButton.style.display = "none";
+        rulesButton.style.display = "none";
+
+        score.style.display = "block";
+        questionContainer.style.display = "block";
+        
+        nextQuestion();
+
+    }
 
