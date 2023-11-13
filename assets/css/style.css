@@ -43,7 +43,6 @@ header img {
 
 #answer-buttons {
     padding: 10px;
-    display: block;
 }
 
 .button {
@@ -55,7 +54,11 @@ header img {
     border-color: rgb(255, 156, 7);
 }
 
-.start-button, .rules-button {
+.start-button, 
+.rules-button, 
+.timer-score, 
+.try-again-button, 
+.lightning-round {
     padding: 10px 0 10px 0;
     margin: 5px 10px 5px 10px;
     width: 33%;
@@ -64,14 +67,6 @@ header img {
     border-color: rgb(255, 156, 7);
 }
 
-.timer-score {
-    padding: 10px 0 10px 0;
-    margin: 5px 10px 5px 10px;
-    width: 33%;
-    background-color: rgb(93, 64, 121);
-    border-radius: 25px;
-    border-color: rgb(255, 156, 7);
-}
 
 @media screen and (max-width: 1200px) {
     .button {
@@ -100,14 +95,12 @@ header img {
         transition: 1s;
     }
 
-    #timer {
-        width: 35%;
-    }
-
+    #timer,
     #score {
         width: 35%;
     }
 }
+
 @media screen and (max-width: 600px) {
     header img {
         width: 70%;
@@ -128,14 +121,11 @@ header img {
         width: 100%;
         transition: 1s;
     }
-    #timer {
-        width: 35%;
-    }
-        
+    #timer
     #score {
         width: 35%;
-        }
     }
+}
 
 @media screen and (max-width: 500px) {
         header img {
@@ -153,12 +143,9 @@ header img {
             transition: 1s;
         }
     
-        #timer {
-            width: 55%;
-        }
-    
+        #timer
         #score {
-            width: 55%;   
+            width: 55%;
         }
 
         .start-button,
