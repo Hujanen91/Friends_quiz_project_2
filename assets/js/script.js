@@ -16,7 +16,7 @@ const backButton = document.getElementById('back-button');
 const score = document.getElementById('score');
 let timer = document.getElementById('timer');
 
-let shuffledQuestions, currentQuestionIndex;
+let shuffledQuestions,currentQuestionIndex;
 
 // Rules Modal from w3schools
 var modal = document.getElementById('myModal');
@@ -58,15 +58,30 @@ function startGame() {
 //Next question
 function setNextQuestion() {
     showQuestion(shuffledQuestions[currentQuestionIndex]);
-}
-
-function showQuestion(question) {
-    questionElement.innerText = question.question;
     
 }
 
+function showQuestion(question) { 
+    resultContainer.classList.remove('hide');
+    nextButton.classList.remove('hide');
+    backButton.classList.remove('hide');
+    questionElement.innerText = question.question;
+      question.answers.forEach(answer => {
+        const button = document.createElement('button');
+        button.innerText = answer.text;
+        button.classList.add('button');
+        if (answer.correct) {
+            button.dataset.correct = answer.correct;
+        }
+        button.addEventListener('click', selectAnswer);
+        answerButton.appendChild(button);
+        
+    })  
+}
+
+
 //Selected answer
-function selectAnswer() {
+function selectAnswer(e) {
     console.log('selected');
     
 }
