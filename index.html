@@ -31,7 +31,7 @@
         </div>
 
         <div class="container" id="container">
-            <div id="question-container">
+            <div id="question-container" class="hide">
                 <div id="question">Question</div>
                 <div id="answer-buttons">
                     <button class="button">Answer 1Answer 1Answer 1Answer 1Answer 1Answer 1Answer 1Answer 1</button>
@@ -43,29 +43,26 @@
         </div>
         
 
-            <div id="results-container">
+            <div id="results-container" class="hide">
                 <button class="timer-score" id="timer">Timer</button>
                 <button class="timer-score" id="score">Score: <span id="score-value">0</span></button>
             </div>
             
             <div class="start-rules">
                 <button class="startbutton" id="start-button">Let's go!</button>
-                <button class="rules-button hide" id="game-rules-button">Game Rules</button>
+                <button class="rules-button" id="game-rules-button">Game Rules</button>
             </div>
        
-
+            <!-- Modal content -->
             <div id="myModal" class="modal">
-        
-                <!-- Modal content -->
                 <div class="rules-content">
                     <span class="close">&times;</span>
                     <p>The only rule is to have more fun than Joey trying to learn French. Good luck, and may your trivia skills be as sharp as
                     Chandler's wit!</p>
                 </div>
-            
             </div>
 
-            <div id="try-again-container">
+            <div id="try-again-container" class="hide">
                 <button class="try-again-button" id="try-again">Try again?</button>
                 <button class="lightning-round" id="lightning">Lightning round!</button>
             </div>
@@ -73,5 +70,6 @@
         </div>
     </main>
     <script src="assets/js/script.js"></script>
+    <script src="assets/js/questions.js"></script>
 </body>
 </html>

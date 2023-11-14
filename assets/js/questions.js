@@ -26,4 +26,4 @@ const questions = [
             { text: "Gladys Glick", correct: false }
         ]
     }
-]
+];

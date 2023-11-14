@@ -17,7 +17,6 @@ h1 {
     font-size: 24px;
 }
 
-
 header img {
     width: 50%;
     height: 35%;
@@ -34,7 +33,6 @@ header img {
     border-radius: 25px;
     padding: 25px;
     margin-bottom: 25px;
-
 }
 
 #about-game {
@@ -60,6 +58,14 @@ header img {
     border-color: rgb(255, 156, 7);
 }
 
+.correct {
+    background: rgb(72, 141, 72);
+}
+
+.incorrect {
+    background-color: rgb(117, 51, 51);
+}
+
 .startbutton, 
 .rules-button, 
 .timer-score, 
@@ -71,6 +77,16 @@ header img {
     background-color: rgb(93, 64, 121);
     border-radius: 25px;
     border-color: rgb(255, 156, 7);
+}
+
+.button:hover,
+.startbutton:hover, 
+.rules-button:hover, 
+.timer-score:hover, 
+.try-again-button:hover, 
+.lightning-round:hover {
+    background-color: rgb(255, 156, 7);
+    border-color: rgb(93, 64, 121);
 }
 
 /* The Modal (background) code from W3Schools */
@@ -112,6 +128,11 @@ header img {
     text-decoration: none;
     cursor: pointer;
 }
+
+.hide {
+    display: none;
+}
+
 
 /* Responsive styling */
 

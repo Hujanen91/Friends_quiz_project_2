@@ -1,7 +1,5 @@
 
 
-
-
 // Variables
 const startButton = document.getElementById('start-button');
 const rulesButton = document.getElementById('game-rules-button');
@@ -24,18 +22,25 @@ var span = document.getElementsByClassName('close')[0];
 // Set timer for lightning round
 const timePerQuestion = 20;
 
+startButton.addEventListener('click', startGame);
 
+// Start game
+function startGame() {
+    console.log('Started');
+    startButton.classList.add('hide');
+    rulesButton.classList.add('hide');
 
-// Variables that is going to loop
+}
 
+//Next question
+function setNextQuestion() {
 
-// Hide results, try-again, lightning-round and question buttons
-resultContainer.style.display = "none";
-questionContainer.style.display = "none";
-tryAgainContainer.style.display = "none";
+}
 
-// 
-startButton.addEventListener('click', runGame);
+//Selected answer
+function selectAnswer() {
+
+}
 
 
 // Show modal when rules are clicked
@@ -54,31 +59,7 @@ window.onclick = function(event) {
 }
 
 
-// Flag to check if the game is already in progress
-let isGameInProgress = false;
 
-// Run game
-function runGame() {
-        if (isGameInProgress) {
-            console.log("The game is already in progress!");
-            return;
-        }
 
-        isGameInProgress = true;
 
-        shuffledQuestions = questions.sort(() => Math.random() - 0.5);
-        currentQuestionIndex = 0;
-
-        currentScore = 0;
-        renderScore();
-
-        startButton.style.display = "none";
-        rulesButton.style.display = "none";
-
-        score.style.display = "block";
-        questionContainer.style.display = "block";
-        
-        nextQuestion();
-
-    }
 
