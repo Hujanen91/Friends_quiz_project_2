@@ -1,5 +1,4 @@
 
-
 // Variables
 const startButton = document.getElementById('start-button');
 const rulesButton = document.getElementById('game-rules-button');
@@ -22,13 +21,23 @@ var span = document.getElementsByClassName('close')[0];
 // Set timer for lightning round
 const timePerQuestion = 20;
 
+//Event listeners
 startButton.addEventListener('click', startGame);
+answerButton.addEventListener('click', selectAnswer);
 
 // Start game
 function startGame() {
     console.log('Started');
     startButton.classList.add('hide');
     rulesButton.classList.add('hide');
+    aboutGame.classList.add('hide');
+    timer.classList.add('hide');
+    questionContainer.classList.remove('hide');
+    answerButton.classList.remove('hide');
+    resultContainer.classList.remove('hide');
+    
+    shuffledQuestions = questions.sort(() => Math.random() - 0.5);
+    currentQuestionIndex = 0;
 
 }
 
@@ -39,6 +48,13 @@ function setNextQuestion() {
 
 //Selected answer
 function selectAnswer() {
+    console.log('selected');
+    
+}
+
+//Time and score
+function timerScore() {
+
 
 }
 

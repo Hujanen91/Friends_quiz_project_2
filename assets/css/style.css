@@ -81,12 +81,15 @@ header img {
 
 .button:hover,
 .startbutton:hover, 
-.rules-button:hover, 
-.timer-score:hover, 
+.rules-button:hover,  
 .try-again-button:hover, 
 .lightning-round:hover {
     background-color: rgb(255, 156, 7);
     border-color: rgb(93, 64, 121);
+}
+
+.no-click {
+    pointer-events: none;
 }
 
 /* The Modal (background) code from W3Schools */
