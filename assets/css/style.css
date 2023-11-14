@@ -49,6 +49,7 @@ header img {
     padding: 10px;
 }
 
+/* Main styling for buttons */
 .button {
     padding: 10px 0 10px 0;
     margin: 5px auto 5px auto;
@@ -58,19 +59,22 @@ header img {
     border-color: rgb(255, 156, 7);
 }
 
+/* Colors for buttons to highlight right and wrong answers */
 .correct {
     background: rgb(72, 141, 72);
 }
-
 .incorrect {
     background-color: rgb(117, 51, 51);
 }
 
+/* Styling for all the buttons non clickable and clickable */
 .startbutton, 
 .rules-button, 
 .timer-score, 
 .try-again-button, 
-.lightning-round {
+.lightning-round,
+.next-button,
+.back-button {
     padding: 10px 0 10px 0;
     margin: 5px 10px 5px 10px;
     width: 33%;
@@ -79,18 +83,23 @@ header img {
     border-color: rgb(255, 156, 7);
 }
 
+/* Styling with hover effect for every clickable button */
 .button:hover,
 .startbutton:hover, 
 .rules-button:hover,  
 .try-again-button:hover, 
-.lightning-round:hover {
+.lightning-round:hover,
+.next-button:hover,
+.back-button:hover {
     background-color: rgb(255, 156, 7);
     border-color: rgb(93, 64, 121);
 }
 
+/* Make timer and score non clickable. */
 .no-click {
     pointer-events: none;
 }
+
 
 /* The Modal (background) code from W3Schools */
 .modal {
