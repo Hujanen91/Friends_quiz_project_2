@@ -37,22 +37,22 @@ tryAgainContainer.style.display = "none";
 // 
 startButton.addEventListener('click', runGame);
 
+
 // Show modal when rules are clicked
 rules.onclick = function() {
     modal.style.display = "block";
 }
-
 // Close modal when "x" is clicked
 span.onclick = function() {
     modal.style.display = "none";
 }
-
 // Close the modal when clicking outside the modal content
 window.onclick = function(event) {
     if (event.target == modal) {
         modal.style.display = "none";
     }
 }
+
 
 // Flag to check if the game is already in progress
 let isGameInProgress = false;
