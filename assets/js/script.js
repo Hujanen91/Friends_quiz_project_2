@@ -26,7 +26,9 @@ var span = document.getElementsByClassName('close')[0];
 const timePerQuestion = 20;
 let timeLeft = timePerQuestion;
 let timerInterval;
-let currentScore = 0; // Declare and initialize currentScore
+
+// Declare and initialize currentScore
+let currentScore = 0; 
 let shuffledQuestion;
 let currentQuestionIndex = 0;
 
@@ -40,7 +42,6 @@ function startGame() {
     startButton.classList.add('hide');
     rulesButton.classList.add('hide');
     aboutGame.classList.add('hide');
-    
     timer.classList.add('hide');
     
     shuffledQuestion = questions.sort(() => Math.random() - 0.5); //Shuffle and bring back questions in random order
@@ -48,7 +49,6 @@ function startGame() {
     
     questionContainer.classList.remove('hide');
     setNextQuestion();
-
     answerButton.classList.remove('hide');
     resultContainer.classList.remove('hide');
     backButton.classList.remove('hide');
@@ -66,7 +66,6 @@ function renderScore() {
     score.innerText = currentScore;
 }
 
-
 //Next question
 function setNextQuestion() {
     resetState();
@@ -75,7 +74,7 @@ function setNextQuestion() {
     }
 }
 
-// Get question
+// Get questions and answers
 function showQuestion(question) { 
     resultContainer.classList.remove('hide');
     backButton.classList.remove('hide');
@@ -96,6 +95,7 @@ function showQuestion(question) {
 }
 }
 
+//Reset buttons when clicking next to implement new questions
 function resetState() {
     nextButton.classList.add('hide');
     while (answerButton.firstChild) {
@@ -117,7 +117,6 @@ function selectAnswer(e) {
         // Disable hover effect
         button.classList.add('answered');
     });
-    
     if (shuffledQuestion.length > currentQuestionIndex + 1) {
         nextButton.classList.remove('hide');
     } else {
@@ -136,6 +135,7 @@ function settingStatus(element, correct) {
     }
 }
 
+// Render score when getting the answer right
 function decrementScore() {
     currentScore--;
     renderScore();
