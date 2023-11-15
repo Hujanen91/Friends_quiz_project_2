@@ -99,18 +99,22 @@ function resetState() {
 
 //Selected answer
 function selectAnswer(e) {
-    console.log('selected');
-    const selectedButton = e.target;
-    const correct = selectedButton.dataset.correct;
-    setStatusClass(document.button, correct);
     Array.from(answerButton.children).forEach(button => {
-        setStatusClass(button, button.dataset.correct);
-    })
-    
+        if (button.dataset.correct) {
+            button.disabled = true;
+        }
+        settingStatus(button, button.dataset.correct);
+    });
+    if (shuffledQuestion.length > currentQuestionIndex + 1) {
+        nextButton.classList.remove('hide');
+    } else {
+        displayEndScore(); // Call displayEndScore() when no more questions are left
+        startButton.classList.remove('hide');
+    }
 }
 
-function setStatusClass(element, correct) {
-    clearStatusClass(element);
+function settingStatus(element, correct) {
+    clearUp(element);
     if (correct) {
         element.classList.add('correct');
     } else {
@@ -118,11 +122,11 @@ function setStatusClass(element, correct) {
     }
 }
 
-function clearStatusClass(element) {
+// Clear up the button background colors when moving on to the next question
+function clearUp(element) {
     element.classList.remove('correct');
     element.classList.remove('incorrect');
 }
-
 
 //Time and score
 function timerScore() {
