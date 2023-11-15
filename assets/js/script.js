@@ -52,7 +52,6 @@ function startGame() {
 
     answerButton.classList.remove('hide');
     resultContainer.classList.remove('hide');
-    nextButton.classList.remove('hide');
     backButton.classList.remove('hide');
 }
 
@@ -76,7 +75,6 @@ function setNextQuestion() {
 
 function showQuestion(question) { 
     resultContainer.classList.remove('hide');
-    nextButton.classList.remove('hide');
     backButton.classList.remove('hide');
     questionElement.innerText = question.question;
       question.answers.forEach(answer => {
@@ -102,8 +100,29 @@ function resetState() {
 //Selected answer
 function selectAnswer(e) {
     console.log('selected');
+    const selectedButton = e.target;
+    const correct = selectedButton.dataset.correct;
+    setStatusClass(document.button, correct);
+    Array.from(answerButton.children).forEach(button => {
+        setStatusClass(button, button.dataset.correct);
+    })
     
 }
+
+function setStatusClass(element, correct) {
+    clearStatusClass(element);
+    if (correct) {
+        element.classList.add('correct');
+    } else {
+        element.classList.add('incorrect');
+    }
+}
+
+function clearStatusClass(element) {
+    element.classList.remove('correct');
+    element.classList.remove('incorrect');
+}
+
 
 //Time and score
 function timerScore() {
