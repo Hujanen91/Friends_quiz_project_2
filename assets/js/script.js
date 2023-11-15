@@ -16,8 +16,6 @@ const backButton = document.getElementById('back-button');
 const score = document.getElementById('score');
 let timer = document.getElementById('timer');
 
-
-
 // Rules Modal from w3schools
 var modal = document.getElementById('myModal');
 var rules = document.getElementById('game-rules-button');
@@ -28,9 +26,6 @@ const timePerQuestion = 20;
 let currentScore = 0; // Declare and initialize currentScore
 let timeLeft = timePerQuestion;
 let timerInterval;
-
-// Creates a way to shuffle questions at random from questions.js
-
 
 //Event listeners
 startButton.addEventListener('click', startGame);
@@ -70,9 +65,12 @@ function renderScore() {
 //Next question
 function setNextQuestion() {
     resetState();
+    if (shuffledQuestion.length > currentQuestionIndex) {
     showQuestion(shuffledQuestion[currentQuestionIndex]);
+    }
 }
 
+// Get question
 function showQuestion(question) { 
     resultContainer.classList.remove('hide');
     backButton.classList.remove('hide');
@@ -83,14 +81,17 @@ function showQuestion(question) {
         button.classList.add('button');
         if (answer.correct) {
             button.dataset.correct = answer.correct;
+            button.addEventListener('click', () => {
+                updateScore();
+        });
         }
         button.addEventListener('click', selectAnswer);
-        answerButton.appendChild(button);
-        
+        answerButton.appendChild(button);  
     })  
 }
 
 function resetState() {
+    nextButton.addEventListener('click', showQuestion);
     nextButton.classList.add('hide');
     while (answerButton.firstChild) {
         answerButton.removeChild(answerButton.firstChild);
@@ -103,10 +104,13 @@ function selectAnswer(e) {
         if (button.dataset.correct) {
             button.disabled = true;
         }
+        
         settingStatus(button, button.dataset.correct);
         // Disable hover effect
         button.classList.add('answered');
+        updateScore();
     });
+    
     if (shuffledQuestion.length > currentQuestionIndex + 1) {
         nextButton.classList.remove('hide');
         
