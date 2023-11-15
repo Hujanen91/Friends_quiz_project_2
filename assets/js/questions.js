@@ -1,7 +1,7 @@
 const questions = [
     {
         question: "What is the profession of Chandler Bing for the main part of the show?",
-        answer: [
+        answers: [
             {text: "IT procurement manager", correct: true},
             {text: "Transponster", correct: false},
             {text: "Paleontologist", correct: false},
@@ -10,7 +10,7 @@ const questions = [
     },
     {
         question: "When Ross tries to teach his son Ben about Hanukkah, what does he dress up as?",
-        answer: [
+        answers: [
             { text: "The Holiday Armadillo", correct: true },
             { text: "A dreidel", correct: false },
             { text: "A potato pancake", correct: false },
@@ -19,7 +19,7 @@ const questions = [
     },
     {
         question: "What is the name of Phoebe's alter ego?",
-        answer: [
+        answers: [
             { text: "Regina Phalange", correct: true },
             { text: "Smelly Nelly", correct: false },
             { text: "Lisa Turtle", correct: false },

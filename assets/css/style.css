@@ -8,7 +8,7 @@
 
 body {
     background-color: rgb(255, 232, 189);
-    background-image: url(https://imageupload.io/ib/FiqvBE8iBeHTyUI_1699915348.jpg);
+    background-image: url(../images/2802898.jpg);
     background-repeat: repeat;
     background-size: 100%;
 }
@@ -93,6 +93,7 @@ header img {
 .back-button:hover {
     background-color: rgb(255, 156, 7);
     border-color: rgb(93, 64, 121);
+    transition: 1s;
 }
 
 /* Make timer and score non clickable. */

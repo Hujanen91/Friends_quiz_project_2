@@ -70,6 +70,7 @@ function renderScore() {
 
 //Next question
 function setNextQuestion() {
+    resetState();
     showQuestion(shuffledQuestion[currentQuestionIndex]);
 }
 
@@ -91,6 +92,12 @@ function showQuestion(question) {
     })  
 }
 
+function resetState() {
+    nextButton.classList.add('hide');
+    while (answerButton.firstChild) {
+        answerButton.removeChild(answerButton.firstChild);
+    }
+}
 
 //Selected answer
 function selectAnswer(e) {
