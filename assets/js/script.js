@@ -23,9 +23,11 @@ var span = document.getElementsByClassName('close')[0];
 
 // Set timer for lightning round
 const timePerQuestion = 20;
-let currentScore = 0; // Declare and initialize currentScore
 let timeLeft = timePerQuestion;
 let timerInterval;
+let currentScore = 0; // Declare and initialize currentScore
+let shuffledQuestion;
+let currentQuestionIndex = 0;
 
 //Event listeners
 startButton.addEventListener('click', startGame);
@@ -39,15 +41,17 @@ function startGame() {
     aboutGame.classList.add('hide');
     timer.classList.add('hide');
     
-    shuffledQuestion = questions.sort(() => Math.random() - .5); //Shuffle and bring back questions in random order
+    shuffledQuestion = questions.sort(() => Math.random() - 0.5); //Shuffle and bring back questions in random order
     currentQuestionIndex = 0; //Will start at the very first question in the array
-    renderScore();
+    
     questionContainer.classList.remove('hide');
     setNextQuestion();
 
     answerButton.classList.remove('hide');
     resultContainer.classList.remove('hide');
     backButton.classList.remove('hide');
+    nextButton.addEventListener('click', setNextQuestion);
+    setNextQuestion();
 }
 
 // Update the player's score
@@ -82,7 +86,6 @@ function showQuestion(question) {
         button.classList.add('button');
         if (answer.correct) {
             button.dataset.correct = answer.correct;
-        
         }
         button.addEventListener('click', selectAnswer);
         answerButton.appendChild(button); 
@@ -93,7 +96,6 @@ function showQuestion(question) {
 }
 
 function resetState() {
-    nextButton.addEventListener('click', showQuestion);
     nextButton.classList.add('hide');
     while (answerButton.firstChild) {
         answerButton.removeChild(answerButton.firstChild);
@@ -102,20 +104,21 @@ function resetState() {
 
 //Selected answer
 function selectAnswer(e) {
-    Array.from(answerButton.children).forEach(button => {
-        if (button.dataset.correct) {
-            button.disabled = true;
+    const selectedButton = e.target;
+    const correct = selectedButton.dataset.correct === 'true';
+    
+        if (!correct) {
+            decrementScore();    
         }
-        
+    Array.from(answerButton.children).forEach(button => { 
+        button.disabled = true;
         settingStatus(button, button.dataset.correct);
         // Disable hover effect
         button.classList.add('answered');
-        updateScore();
     });
     
     if (shuffledQuestion.length > currentQuestionIndex + 1) {
         nextButton.classList.remove('hide');
-        
     } else {
         displayEndScore(); // Call displayEndScore() when no more questions are left
         startButton.classList.remove('hide');
@@ -124,18 +127,28 @@ function selectAnswer(e) {
 
 function settingStatus(element, correct) {
     clearUp(element);
-    if (correct) {
+    if (correct === 'true') {
         element.classList.add('correct');
+        updateScore();
     } else {
         element.classList.add('incorrect');
+    }
 }
-    
+
+function decrementScore() {
+    currentScore--;
+    renderScore();
 }
 
 // Clear up the button background colors when moving on to the next question
 function clearUp(element) {
     element.classList.remove('correct');
     element.classList.remove('incorrect');
+}
+
+//Display the end score
+function displayEndScore() {
+
 }
 
 //Time and score
