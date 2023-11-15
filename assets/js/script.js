@@ -75,19 +75,21 @@ function showQuestion(question) {
     resultContainer.classList.remove('hide');
     backButton.classList.remove('hide');
     questionElement.innerText = question.question;
+    if (question.answers && Array.isArray(question.answers)) {
       question.answers.forEach(answer => {
         const button = document.createElement('button');
         button.innerText = answer.text;
         button.classList.add('button');
         if (answer.correct) {
             button.dataset.correct = answer.correct;
-            button.addEventListener('click', () => {
-                updateScore();
-        });
+        
         }
         button.addEventListener('click', selectAnswer);
-        answerButton.appendChild(button);  
-    })  
+        answerButton.appendChild(button); 
+    });
+    } else {
+        console.error('Answers are not defined or not an array:', question.answers);
+}
 }
 
 function resetState() {
