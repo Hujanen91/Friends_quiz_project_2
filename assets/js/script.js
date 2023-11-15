@@ -104,9 +104,12 @@ function selectAnswer(e) {
             button.disabled = true;
         }
         settingStatus(button, button.dataset.correct);
+        // Disable hover effect
+        button.classList.add('answered');
     });
     if (shuffledQuestion.length > currentQuestionIndex + 1) {
         nextButton.classList.remove('hide');
+        
     } else {
         displayEndScore(); // Call displayEndScore() when no more questions are left
         startButton.classList.remove('hide');
@@ -119,7 +122,8 @@ function settingStatus(element, correct) {
         element.classList.add('correct');
     } else {
         element.classList.add('incorrect');
-    }
+}
+    
 }
 
 // Clear up the button background colors when moving on to the next question

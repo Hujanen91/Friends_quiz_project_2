@@ -96,6 +96,12 @@ header img {
     transition: 1s;
 }
 
+/* Disable hover effect on answered-buttons once an answer has been submitted */
+button.answered{
+    pointer-events: none;
+}
+
+
 /* Make timer and score non clickable. */
 .no-click {
     pointer-events: none;
