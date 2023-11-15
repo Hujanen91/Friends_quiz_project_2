@@ -6,7 +6,7 @@ const questions = [
             {text: "Transponster", correct: false},
             {text: "Paleontologist", correct: false},
             {text: "Chef", correct: false}
-        ]
+        ],
     },
     {
         question: "When Ross tries to teach his son Ben about Hanukkah, what does he dress up as?",
@@ -15,7 +15,7 @@ const questions = [
             { text: "A dreidel", correct: false },
             { text: "A potato pancake", correct: false },
             { text: "Santa Claus", correct: false }
-        ]
+        ],
     },
     {
         question: "What is the name of Phoebe's alter ego?",
@@ -24,7 +24,7 @@ const questions = [
             { text: "Smelly Nelly", correct: false },
             { text: "Lisa Turtle", correct: false },
             { text: "Gladys Glick", correct: false }
-        ]
+        ],
     },
     {
         question: "What does Ross famously scream when trying to help move a couch into his apartment?",
@@ -33,7 +33,7 @@ const questions = [
             { text: "Lift and slide!", correct: false },
             { text: "My Sandwitch??", correct: false },
             { text: "Shut Up! Shut Up! Shut Uuup!", correct: false }
-        ]
+        ],
     },
     {
         question: "What song does Ross want to play on the bagpipes at Monica and Chandlers wedding?",

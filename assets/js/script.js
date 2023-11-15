@@ -1,4 +1,5 @@
 
+
 // Variables
 const startButton = document.getElementById('start-button');
 const rulesButton = document.getElementById('game-rules-button');
@@ -39,6 +40,7 @@ function startGame() {
     startButton.classList.add('hide');
     rulesButton.classList.add('hide');
     aboutGame.classList.add('hide');
+    
     timer.classList.add('hide');
     
     shuffledQuestion = questions.sort(() => Math.random() - 0.5); //Shuffle and bring back questions in random order
@@ -51,7 +53,6 @@ function startGame() {
     resultContainer.classList.remove('hide');
     backButton.classList.remove('hide');
     nextButton.addEventListener('click', setNextQuestion);
-    setNextQuestion();
 }
 
 // Update the player's score
