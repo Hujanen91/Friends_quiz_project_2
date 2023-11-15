@@ -16,7 +16,7 @@ const backButton = document.getElementById('back-button');
 const score = document.getElementById('score');
 let timer = document.getElementById('timer');
 
-let shuffledQuestions,currentQuestionIndex;
+
 
 // Rules Modal from w3schools
 var modal = document.getElementById('myModal');
@@ -44,8 +44,9 @@ function startGame() {
     aboutGame.classList.add('hide');
     timer.classList.add('hide');
     
-    shuffledQuestions = questions.sort(() => Math.random() - .5); //Shuffle and bring back questions in random order
-    currentQuestionIndex = 0 //Will start at the very first question in the array
+    shuffledQuestion = questions.sort(() => Math.random() - .5); //Shuffle and bring back questions in random order
+    currentQuestionIndex = 0; //Will start at the very first question in the array
+    renderScore();
     questionContainer.classList.remove('hide');
     setNextQuestion();
 
@@ -55,10 +56,21 @@ function startGame() {
     backButton.classList.remove('hide');
 }
 
+// Update the player's score
+function updateScore() {
+    currentScore++; // Increment the score
+    renderScore(); // Update the score display
+}
+
+// Update the score by displaying correct clicked answers
+function renderScore() {
+    score.innerText = currentScore;
+}
+
+
 //Next question
 function setNextQuestion() {
-    showQuestion(shuffledQuestions[currentQuestionIndex]);
-    
+    showQuestion(shuffledQuestion[currentQuestionIndex]);
 }
 
 function showQuestion(question) { 
