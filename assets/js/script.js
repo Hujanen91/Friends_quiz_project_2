@@ -80,6 +80,7 @@ function setNextQuestion() {
         aboutGame.classList.remove('hide');
         aboutGame.innerText = "Great job!"
         displayEndScore();
+        score.innerText = "Final score:";
         startButton.innerText = "Lightning round?";
         startButton.classList.remove('hide');
     }
@@ -138,7 +139,8 @@ function selectAnswer(e) {
         nextButton.classList.add('hide');
         aboutGame.classList.remove('hide');
         aboutGame.innerText = "Great job!"
-        displayEndScore(); // Call displayEndScore() when no more questions are left
+        score.innerText = "Final score:", displayEndScore();
+         // Call displayEndScore() when no more questions are left
         startButton.innerText = "Lightning round?";
         startButton.classList.remove('hide');
     }
