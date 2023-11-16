@@ -45,21 +45,21 @@ const questions = [{
         ]
     },
     {   //6
-        question: "",
+        question: "Which two characters accidentally got married in Las Vegas?",
         answers: [
-            { text: "Lift and slide!", correct: false },
-            { text: "My Sandwitch??", correct: false },
-            { text: "Shut Up! Shut Up! Shut Uuup!", correct: false },
-            { text: "Pivot!", correct: true }
+            { text: "Joey and Pheoebe", correct: false },
+            { text: "Monica and Chandler", correct: false },
+            { text: "Ross and Monica", correct: false },
+            { text: "Rachel and Ross", correct: true }
         ],
     },
     {   //7
-        question: "",
+        question: "What does Phoebe find in a soda can?",
         answers: [
-            { text: "Scotland the Brave", correct: false },
-            { text: "Under pressure", correct: false },
-            { text: "Celebration", correct: true },
-            { text: "Disco inferno", correct: false }
+            { text: "A toe", correct: false },
+            { text: "A ring", correct: false },
+            { text: "A thumb", correct: true },
+            { text: "A condom", correct: false }
         ]
     },
     {   //8
@@ -81,111 +81,111 @@ const questions = [{
         ]
     },
     {   //10
-        question: "",
+        question: "Who was Monica's first roommate before Rachel moved in?",
         answers: [
-            { text: "Pivot!", correct: true },
-            { text: "Lift and slide!", correct: false },
-            { text: "My Sandwitch??", correct: false },
-            { text: "Shut Up! Shut Up! Shut Uuup!", correct: false }
+            { text: "Phoebe", correct: true },
+            { text: "Ross", correct: false },
+            { text: "Janice", correct: false },
+            { text: "Joey", correct: false }
         ],
     },
     {   //11
-        question: "",
+        question: "What is the name of Joey Tribbiani's soap opera character?",
         answers: [
-            { text: "Celebration", correct: true },
-            { text: "Scotland the Brave", correct: false },
-            { text: "Under pressure", correct: false },
-            { text: "Disco inferno", correct: false }
+            { text: "Dr. Richard Burke", correct: false },
+            { text: "Dr. Drake Ramoray", correct: true },
+            { text: "Dr. Leonard Green", correct: false },
+            { text: "Dr. Barry Farber", correct: false }
         ]
     },
     {   //12
-        question: "",
+        question: 'Which character famously said, "Oh. My. God."?',
         answers: [
-            { text: "The Holiday Armadillo", correct: true },
-            { text: "A dreidel", correct: false },
-            { text: "A potato pancake", correct: false },
-            { text: "Santa Claus", correct: false }
+            { text: "Gunther", correct: false },
+            { text: "Chandler", correct: false }, 
+            { text: "Janice", correct: true },
+            { text: "Monica", correct: false }
         ],
     },
     {   //13
-        question: "",
+        question: "What is the full name of Ross Geller's second wife?",
         answers: [
-            { text: "Regina Phalange", correct: true },
-            { text: "Smelly Nelly", correct: false },
-            { text: "Lisa Turtle", correct: false },
-            { text: "Gladys Glick", correct: false }
+            { text: "Carol Willick", correct: true },
+            { text: "Emily Waltham", correct: false },
+            { text: "Janice Litman-Goralnik", correct: false },
+            { text: "Julie Graff", correct: false }
         ],
     },
     {   //14
-        question: "",
+        question: "What is the occupation of Rachel Green in the early seasons of the show?",
         answers: [
-            { text: "Pivot!", correct: true },
-            { text: "Lift and slide!", correct: false },
-            { text: "My Sandwitch??", correct: false },
-            { text: "Shut Up! Shut Up! Shut Uuup!", correct: false }
+            { text: "Chef", correct: false },
+            { text: "Waitress", correct: true },
+            { text: "Fashion Buyer", correct: false },
+            { text: "Personal Shopper", correct: false }
         ],
     },
     {   //15
-        question: "",
+        question: "What is the profession of Ross Geller?",
         answers: [
-            { text: "Celebration", correct: true },
-            { text: "Scotland the Brave", correct: false },
-            { text: "Under pressure", correct: false },
-            { text: "Disco inferno", correct: false }
+            { text: "Teacher", correct: false },
+            { text: "Fashion Designer", correct: false },
+            { text: "Actor", correct: false },
+            { text: "Paleontologist", correct: true }
         ]
     },
     {   //16
-        question: "",
+        question: "What is the name of Joey's agent who represents him throughout the series?",
         answers: [
-            { text: "Pivot!", correct: true },
-            { text: "Lift and slide!", correct: false },
-            { text: "My Sandwitch??", correct: false },
-            { text: "Shut Up! Shut Up! Shut Uuup!", correct: false }
+            { text: "Estelle", correct: true },
+            { text: "Lauren", correct: false },
+            { text: "Sally", correct: false },
+            { text: "Edna", correct: false }
         ],
     },
     {   //17
-        question: "",
+        question: "What is the name of Phoebes sister?",
         answers: [
-            { text: "Celebration", correct: true },
-            { text: "Scotland the Brave", correct: false },
-            { text: "Under pressure", correct: false },
-            { text: "Disco inferno", correct: false }
+            { text: "Regina", correct: false },
+            { text: "Jill", correct: false },
+            { text: "Ursula", correct: true },
+            { text: "Janice", correct: false }
         ]
     },
     {   //18
-        question: "",
+        question: "Who gets trapped in an ATM vestibule with a supermodel?",
         answers: [
-            { text: "Pivot!", correct: true },
-            { text: "Lift and slide!", correct: false },
-            { text: "My Sandwitch??", correct: false },
-            { text: "Shut Up! Shut Up! Shut Uuup!", correct: false }
+            { text: "Joey", correct: false },
+            { text: "Ross", correct: false },
+            { text: "Gunther", correct: false },
+            { text: "Chandler", correct: true }
         ],
     },
     {   //19
-        question: "",
+        question: "What is Monica Geller obsessive-compulsive about?",
         answers: [
-            { text: "Celebration", correct: true },
-            { text: "Scotland the Brave", correct: false },
-            { text: "Under pressure", correct: false },
-            { text: "Disco inferno", correct: false }
+            { text: "Cleaning", correct: true },
+            { text: "Shopping", correct: false },
+            { text: "Cooking", correct: false },
+            { text: "Painting", correct: false }
         ]
     },
     {   //20
-        question: "",
+        question: "What is the name of Joey's stuffed penguin?",
         answers: [
-            { text: "Pivot!", correct: true },
-            { text: "Lift and slide!", correct: false },
-            { text: "My Sandwitch??", correct: false },
-            { text: "Shut Up! Shut Up! Shut Uuup!", correct: false }
+            { text: "Fluffy", correct: false },
+            { text: "Snuggles", correct: false },
+            { text: "Hugsy", correct: true },
+            { text: "Puddles", correct: false }
         ],
     },
     {   //21
-        question: "",
+        question: "What does Phoebe want to change her name to?",
         answers: [
-            { text: "Celebration", correct: true },
-            { text: "Scotland the Brave", correct: false },
-            { text: "Under pressure", correct: false },
-            { text: "Disco inferno", correct: false }
+            { text: "Gladys", correct: false },
+            { text: "Princess Consuela Banana-Hammock", correct: true },
+            { text: "Anastasia Beaverhausen", correct: false },
+            { text: "Regina Phalange", correct: false }
         ]
     }
 ];
