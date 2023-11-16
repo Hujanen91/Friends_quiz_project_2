@@ -7,6 +7,7 @@ const answerButton = document.getElementById('answer-buttons');
 const resultContainer = document.getElementById('results-container');
 const questionContainer = document.getElementById('question-container');
 const questionElement = document.getElementById('question');
+const congratsContainer = document.getElementById('main-div-congrats');
 const tryAgainContainer = document.getElementById('try-again-container');
 const aboutGame = document.getElementById('about-game');
 const scoreValue = document.getElementById('scoreValue');
@@ -46,6 +47,7 @@ function startGame() {
     rulesButton.classList.add('hide');
     aboutGame.classList.add('hide');
     timer.classList.add('hide');
+    congratsContainer.classList.add('hide');
     console.log('Started');
     shuffledQuestion = questions.sort(() => Math.random() - 0.5); //Shuffle and bring back questions in random order
     currentQuestionIndex = 0; //Will start at the very first question in the array
@@ -71,20 +73,20 @@ function renderScore() {
 function setNextQuestion() {
     resetState();
     if (!quizEnded && currentQuestionIndex < 15) {
-    showQuestion(shuffledQuestion[currentQuestionIndex++]);
-    } else {
-
-        quizEnded = true;
-        questionContainer.classList.add('hide')
-        nextButton.classList.add('hide');
-        aboutGame.classList.remove('hide');
-        aboutGame.innerText = "Great job!"
-        displayEndScore();
-        score.innerText = "Final score:";
-        startButton.innerText = "Lightning round?";
-        startButton.classList.remove('hide');
+        showQuestion(shuffledQuestion[currentQuestionIndex++]);
+        } else {
+    
+            quizEnded = true;
+            questionContainer.classList.add('hide')
+            nextButton.classList.add('hide');
+            aboutGame.classList.remove('hide');
+            aboutGame.innerText = "Great job!"
+            displayEndScore(score);
+            score.innerText = "Final score:";
+            startButton.innerText = "Lightning round?";
+            startButton.classList.remove('hide');
+        }
     }
-}
 
 // Get questions and answers
 function showQuestion(question) { 
@@ -120,20 +122,21 @@ function selectAnswer(e) {
     if (!quizEnded) {
     const selectedButton = e.target;
     const correct = selectedButton.dataset.correct === 'true';
-    
-    if (!correct) {
-        decrementScore();    
-    }}
+
+        if (!correct) {
+            decrementScore();    
+        }}
     Array.from(answerButton.children).forEach(button => { 
         button.disabled = true;
         settingStatus(button, button.dataset.correct);
         // Disable hover effect
         button.classList.add('answered');
     });
-
+    
     if (shuffledQuestion.length > currentQuestionIndex + 1) {
         nextButton.classList.remove('hide');
     } else {
+        displayEndScore(); // Call displayEndScore() when no more questions are left
         quizEnded = true;
         questionContainer.classList.add('hide')
         nextButton.classList.add('hide');
