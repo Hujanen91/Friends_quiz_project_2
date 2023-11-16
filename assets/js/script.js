@@ -37,7 +37,6 @@ let currentQuestionIndex = 0;
 startButton.addEventListener('click', startGame);
 answerButton.addEventListener('click', selectAnswer);
 nextButton.addEventListener('click', setNextQuestion);
-button.addEventListener('click', selectAnswer);
 
 // Start game
 function startGame() {
