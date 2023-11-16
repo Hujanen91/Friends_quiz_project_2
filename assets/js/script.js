@@ -82,7 +82,6 @@ function setNextQuestion() {
             aboutGame.classList.remove('hide');
             aboutGame.innerText = "Great job!"
             displayEndScore(score);
-            score.innerText = "Final score:";
             startButton.innerText = "Lightning round?";
             startButton.classList.remove('hide');
         }
@@ -175,7 +174,18 @@ function clearUp(element) {
 
 //Display the end score
 function displayEndScore() {
-
+    
+    // Display the final score
+    score.innerText = `Final Score: ${currentScore} out of 15`; // You can customize this text
+    
+    // You can also add additional text or messages based on the final score
+    if (currentScore === 15) {
+        score.innerText += "\nPerfect Score! Well done!";
+    } else if (currentScore >= 10) {
+        score.innerText += "\nGreat job! You did well!";
+    } else {
+        score.innerText += "\nKeep practicing. You'll get better!";
+    }
 }
 
 //Time and score
