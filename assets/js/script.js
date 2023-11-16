@@ -90,9 +90,11 @@ function setNextQuestion() {
 
 // Get questions and answers
 function showQuestion(question) { 
+    
     resultContainer.classList.remove('hide');
     backButton.classList.remove('hide');
     questionElement.innerText = question.question;
+
     if (question.answers && Array.isArray(question.answers)) {
       question.answers.forEach(answer => {
         const button = document.createElement('button');

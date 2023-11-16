@@ -35,14 +35,29 @@ header img {
     margin-bottom: 25px;
 }
 
+#main-div-congrats {
+    border-style: double;
+    border-color: rgb(93, 64, 121);
+    border-radius: 25px;
+    letter-spacing: 1px;
+    margin-bottom: 25px;
+    padding: 25px;
+}
+
 #about-game {
     border-style: double;
     border-color: rgb(93, 64, 121);
     border-radius: 25px;
     letter-spacing: 1px;
-    padding-bottom: 25px;
+    margin-bottom: 25px;
     padding: 25px;
-    width: 85%;
+}
+
+#question {
+    border-style: double;
+    border-color: rgb(93, 64, 121);
+    border-radius: 25px;
+    padding: 25px
 }
 
 #about-game h1 {
@@ -160,8 +175,9 @@ button.answered{
 
 @media screen and (max-width: 1200px) {
     .button {
-            width: 50%;
+            width: 45%;
             transition: 1s;
+            margin: 5px;
         }
 
 @media screen and (max-width: 800px) {
