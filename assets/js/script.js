@@ -32,6 +32,7 @@ let currentScore = 0;
 let shuffledQuestion;
 let currentQuestionIndex = 0;
 
+
 //Event listeners
 startButton.addEventListener('click', startGame);
 answerButton.addEventListener('click', selectAnswer);
@@ -40,15 +41,14 @@ button.addEventListener('click', selectAnswer);
 
 // Start game
 function startGame() {
-    console.log('Started');
+    // Hide buttons that are not supposed to show on start 
     startButton.classList.add('hide');
     rulesButton.classList.add('hide');
     aboutGame.classList.add('hide');
     timer.classList.add('hide');
-    
+    console.log('Started');
     shuffledQuestion = questions.sort(() => Math.random() - 0.5); //Shuffle and bring back questions in random order
     currentQuestionIndex = 0; //Will start at the very first question in the array
-    
     questionContainer.classList.remove('hide');
     setNextQuestion();
     answerButton.classList.remove('hide');
@@ -70,7 +70,7 @@ function renderScore() {
 //Next question
 function setNextQuestion() {
     resetState();
-    if (shuffledQuestion.length > currentQuestionIndex) {
+    if (shuffledQuestion.length > currentQuestionIndex++) {
     showQuestion(shuffledQuestion[currentQuestionIndex]);
     }
 }
