@@ -306,15 +306,16 @@ const questions = [{
         ]
     },
     {   //35
-        question: "",
+        question: "What does Monica's dad give her to compensate ruining her childhood possesions?",
         answers: [
-            { text: "Estelle", correct: true },
-            { text: "Lauren", correct: false },
-            { text: "Sally", correct: false },
+            { text: "A car", correct: true },
+            { text: "A tv", correct: false },
+            { text: "Money", correct: false },
             { text: "Edna", correct: false }
         ],
     },
-    {   //36
+];
+    /*{   //36
         question: "",
         answers: [
             { text: "Regina", correct: false },
