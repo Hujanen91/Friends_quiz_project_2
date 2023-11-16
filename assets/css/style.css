@@ -203,7 +203,12 @@ header img {
 
     #timer,
     #score {
-        width: 35%;
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    #results-container {
+        width: 50%;
     }
 }
 
@@ -229,7 +234,7 @@ header img {
     }
     #timer
     #score {
-        width: 35%;
+        width: 
     }
 }
 
@@ -252,7 +257,7 @@ header img {
     
         #timer
         #score {
-            width: 55%;
+            width: 
         }
 
         .start-button,
