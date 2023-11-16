@@ -16,6 +16,7 @@ const nextButton = document.getElementById('next-button');
 const backButton = document.getElementById('back-button');
 const score = document.getElementById('score');
 let timer = document.getElementById('timer');
+let quizEnded = false;
 
 // Rules Modal from w3schools
 var modal = document.getElementById('myModal');
@@ -69,8 +70,18 @@ function renderScore() {
 //Next question
 function setNextQuestion() {
     resetState();
-    if (shuffledQuestion.length > currentQuestionIndex++) {
-    showQuestion(shuffledQuestion[currentQuestionIndex]);
+    if (!quizEnded && currentQuestionIndex < 15) {
+    showQuestion(shuffledQuestion[currentQuestionIndex++]);
+    } else {
+
+        quizEnded = true;
+        questionContainer.classList.add('hide')
+        nextButton.classList.add('hide');
+        aboutGame.classList.remove('hide');
+        aboutGame.innerText = "Great job!"
+        displayEndScore();
+        startButton.innerText = "Lightning round?";
+        startButton.classList.remove('hide');
     }
 }
 
@@ -105,22 +116,30 @@ function resetState() {
 
 //Selected answer
 function selectAnswer(e) {
+    if (!quizEnded) {
     const selectedButton = e.target;
     const correct = selectedButton.dataset.correct === 'true';
     
-        if (!correct) {
-            decrementScore();    
-        }
+    if (!correct) {
+        decrementScore();    
+    }}
     Array.from(answerButton.children).forEach(button => { 
         button.disabled = true;
         settingStatus(button, button.dataset.correct);
         // Disable hover effect
         button.classList.add('answered');
     });
+
     if (shuffledQuestion.length > currentQuestionIndex + 1) {
         nextButton.classList.remove('hide');
     } else {
+        quizEnded = true;
+        questionContainer.classList.add('hide')
+        nextButton.classList.add('hide');
+        aboutGame.classList.remove('hide');
+        aboutGame.innerText = "Great job!"
         displayEndScore(); // Call displayEndScore() when no more questions are left
+        startButton.innerText = "Lightning round?";
         startButton.classList.remove('hide');
     }
 }

@@ -110,8 +110,8 @@ const questions = [{
     {   //13
         question: "What is the full name of Ross Geller's second wife?",
         answers: [
-            { text: "Carol Willick", correct: true },
-            { text: "Emily Waltham", correct: false },
+            { text: "Emily Waltham", correct: true },
+            { text: "Carol Willick", correct: false },
             { text: "Janice Litman-Goralnik", correct: false },
             { text: "Julie Graff", correct: false }
         ],
