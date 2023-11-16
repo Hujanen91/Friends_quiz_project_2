@@ -1,5 +1,5 @@
-const questions = [
-    {
+const questions = [{
+    
         question: "What is the profession of Chandler Bing for the main part of the show?",
         answers: [
             {text: "IT procurement manager", correct: true},

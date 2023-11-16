@@ -35,6 +35,8 @@ let currentQuestionIndex = 0;
 //Event listeners
 startButton.addEventListener('click', startGame);
 answerButton.addEventListener('click', selectAnswer);
+nextButton.addEventListener('click', setNextQuestion);
+button.addEventListener('click', selectAnswer);
 
 // Start game
 function startGame() {
@@ -52,7 +54,6 @@ function startGame() {
     answerButton.classList.remove('hide');
     resultContainer.classList.remove('hide');
     backButton.classList.remove('hide');
-    nextButton.addEventListener('click', setNextQuestion);
 }
 
 // Update the player's score
@@ -87,7 +88,7 @@ function showQuestion(question) {
         if (answer.correct) {
             button.dataset.correct = answer.correct;
         }
-        button.addEventListener('click', selectAnswer);
+        
         answerButton.appendChild(button); 
     });
     } else {
