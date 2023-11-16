@@ -187,5 +187,266 @@ const questions = [{
             { text: "Anastasia Beaverhausen", correct: false },
             { text: "Regina Phalange", correct: false }
         ]
+    },
+    {   //22
+        question: "What type of animal is 'Hugsy'?",
+        answers: [
+            { text: "Bear", correct: false },
+            { text: "Dog", correct: false },
+            { text: "Panda", correct: false },
+            { text: "Penguine", correct: true }
+        ]
+    },
+    {   //23
+        question: "Which Friend lived on the street when they were younger?",
+        answers: [
+            { text: "Phoebe", correct: true },
+            { text: "Joey", correct: false },
+            { text: "Ross", correct: false },
+            { text: "Chandler", correct: false }
+        ],
+    },
+    {   //24
+        question: "What surrounds the peep-hole on the door of Monica's apartment?",
+        answers: [
+            { text: "Nothing", correct: false },
+            { text: "A flowers wreath", correct: false },
+            { text: "A picture frame", correct: true },
+            { text: "Strings of lights", correct: false }
+        ]
+    },
+    {   //25
+        question: "How many babies are born on the show?",
+        answers: [
+            { text: "3", correct: false },
+            { text: "10", correct: false },
+            { text: "4", correct: false },
+            { text: "7", correct: true }
+        ],
+    },
+    {   //26
+        question: "Who dated 'The Screamer', 'The Yeti' and the man with the 'Innapropriate Sister'?",
+        answers: [
+            { text: "Rachel", correct: true },
+            { text: "Phoebe", correct: false },
+            { text: "Monica", correct: false },
+            { text: "Janice", correct: false }
+        ]
+    },
+    {   //27
+        question: "How many seasons of the show were made?",
+        answers: [
+            { text: "8", correct: false },
+            { text: "12", correct: false },
+            { text: "10", correct: true },
+            { text: "6", correct: false }
+        ],
+    },
+    {   //28
+        question: "Who plays 'Will', an old friend of Monica and Ross' from high school who hates Rachel?",
+        answers: [
+            { text: "Bruce Willis", correct: false },
+            { text: "Robin Williams", correct: false },
+            { text: "Charlie Sheen", correct: false },
+            { text: "Brad Pitt", correct: true }
+        ]
+    },
+    {   //29
+        question: "What is Joey's ethnic origin?",
+        answers: [
+            { text: "Italian", correct: true },
+            { text: "Spanish", correct: false },
+            { text: "Greek", correct: false },
+            { text: "Portoguese", correct: false }
+        ],
+    },
+    {   //30
+        question: "Where is Chandler forced to work after falling asleep in a meeting?",
+        answers: [
+            { text: "Chicago", correct: false },
+            { text: "Las Vegas", correct: false },
+            { text: "Tulsa", correct: true },
+            { text: "Springfield", correct: false }
+        ]
+    },
+    {   //31
+        question: "What is the name of the neighbour who leaves everything to Monica and Rachel when he dies?",
+        answers: [
+            { text: "Mr. Treeger", correct: false },
+            { text: "Ugly Naked Guy", correct: false },
+            { text: "Gunther", correct: false },
+            { text: "Mr. Heckles", correct: true }
+        ],
+    },
+    {   //32
+        question: "Which friend of her parents does Monica date?",
+        answers: [
+            { text: "Richard Burke", correct: true },
+            { text: "Pete Becker", correct: false },
+            { text: "Tag Jones", correct: false },
+            { text: "Barry Farber", correct: false }
+        ]
+    },
+    {   //33
+        question: "In 'The one with the lottery', what causes Phoebe to drop the bowl of tickets?",
+        answers: [
+            { text: "A backfiring car", correct: false },
+            { text: "She got pushed", correct: false },
+            { text: "A flying pigeon", correct: true },
+            { text: "A bat scared her", correct: false }
+        ],
+    },
+    {   //34
+        question: "How is the nude man in the apartment across from Monica's better known?",
+        answers: [
+            { text: "That Naked Guy", correct: false },
+            { text: "Mr. Heckles", correct: false },
+            { text: "Mr. Treeger", correct: false },
+            { text: "Ugly Naked Guy", correct: true }
+        ]
+    },
+    {   //35
+        question: "",
+        answers: [
+            { text: "Estelle", correct: true },
+            { text: "Lauren", correct: false },
+            { text: "Sally", correct: false },
+            { text: "Edna", correct: false }
+        ],
+    },
+    {   //36
+        question: "",
+        answers: [
+            { text: "Regina", correct: false },
+            { text: "Jill", correct: false },
+            { text: "Ursula", correct: true },
+            { text: "Janice", correct: false }
+        ]
+    },
+    {   //37
+        question: "",
+        answers: [
+            { text: "Joey", correct: false },
+            { text: "Ross", correct: false },
+            { text: "Gunther", correct: false },
+            { text: "Chandler", correct: true }
+        ],
+    },
+    {   //38
+        question: "",
+        answers: [
+            { text: "Cleaning", correct: true },
+            { text: "Shopping", correct: false },
+            { text: "Cooking", correct: false },
+            { text: "Painting", correct: false }
+        ]
+    },
+    {   //39
+        question: "",
+        answers: [
+            { text: "Fluffy", correct: false },
+            { text: "Snuggles", correct: false },
+            { text: "Hugsy", correct: true },
+            { text: "Puddles", correct: false }
+        ],
+    },
+    {   //40
+        question: "",
+        answers: [
+            { text: "Teacher", correct: false },
+            { text: "Fashion Designer", correct: false },
+            { text: "Actor", correct: false },
+            { text: "Paleontologist", correct: true }
+        ]
+    },
+    {   //41
+        question: "",
+        answers: [
+            { text: "Estelle", correct: true },
+            { text: "Lauren", correct: false },
+            { text: "Sally", correct: false },
+            { text: "Edna", correct: false }
+        ],
+    },
+    {   //42
+        question: "",
+        answers: [
+            { text: "Regina", correct: false },
+            { text: "Jill", correct: false },
+            { text: "Ursula", correct: true },
+            { text: "Janice", correct: false }
+        ]
+    },
+    {   //43
+        question: "",
+        answers: [
+            { text: "Joey", correct: false },
+            { text: "Ross", correct: false },
+            { text: "Gunther", correct: false },
+            { text: "Chandler", correct: true }
+        ],
+    },
+    {   //44
+        question: "",
+        answers: [
+            { text: "Cleaning", correct: true },
+            { text: "Shopping", correct: false },
+            { text: "Cooking", correct: false },
+            { text: "Painting", correct: false }
+        ]
+    },
+    {   //45
+        question: "",
+        answers: [
+            { text: "Fluffy", correct: false },
+            { text: "Snuggles", correct: false },
+            { text: "Hugsy", correct: true },
+            { text: "Puddles", correct: false }
+        ],
+    },
+    {   //46
+        question: "",
+        answers: [
+            { text: "Teacher", correct: false },
+            { text: "Fashion Designer", correct: false },
+            { text: "Actor", correct: false },
+            { text: "Paleontologist", correct: true }
+        ]
+    },
+    {   //47
+        question: "",
+        answers: [
+            { text: "Estelle", correct: true },
+            { text: "Lauren", correct: false },
+            { text: "Sally", correct: false },
+            { text: "Edna", correct: false }
+        ],
+    },
+    {   //48
+        question: "",
+        answers: [
+            { text: "Regina", correct: false },
+            { text: "Jill", correct: false },
+            { text: "Ursula", correct: true },
+            { text: "Janice", correct: false }
+        ]
+    },
+    {   //49
+        question: "",
+        answers: [
+            { text: "Joey", correct: false },
+            { text: "Ross", correct: false },
+            { text: "Gunther", correct: false },
+            { text: "Chandler", correct: true }
+        ],
+    },
+    {   //50
+        question: "",
+        answers: [
+            { text: "Cleaning", correct: true },
+            { text: "Shopping", correct: false },
+            { text: "Cooking", correct: false },
+            { text: "Painting", correct: false }
+        ]
     }
 ];
