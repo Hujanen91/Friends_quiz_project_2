@@ -182,7 +182,7 @@ const questions = [{
         ],
     },
     {   //21
-        question: "What does Phoebe want to change her name to?",
+        question: "What did Phoebe legally change her name to?",
         answers: [
             { text: "Gladys", correct: false },
             { text: "Princess Consuela Banana-Hammock", correct: true },
@@ -316,8 +316,7 @@ const questions = [{
             { text: "A box of chocolates", correct: false }
         ],
     },
-];
-    /*{   //36
+    {   //36
         question: "Who is secretly married to a Canadian ice dancer?",
         answers: [
             { text: "Monica", correct: false },
@@ -379,8 +378,9 @@ const questions = [{
             { text: "Ross", correct: true },
             { text: "Rachel", correct: false }
         ]
-    },
-    {   //43
+    }
+];
+    /*{   //43
         question: "",
         answers: [
             { text: "Joey", correct: false },
