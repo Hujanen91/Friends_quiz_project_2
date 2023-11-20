@@ -8,7 +8,6 @@ const answerButton = document.getElementById('answer-buttons');
 const resultContainer = document.getElementById('results-container');
 const questionContainer = document.getElementById('question-container');
 const questionElement = document.getElementById('question');
-const congratsContainer = document.getElementById('main-div-congrats');
 const tryAgainContainer = document.getElementById('try-again-container');
 const aboutGame = document.getElementById('about-game');
 const scoreValue = document.getElementById('scoreValue');
@@ -48,7 +47,6 @@ function startGame() {
     rulesButton.classList.add('hide');
     aboutGame.classList.add('hide');
     timer.classList.add('hide');
-    congratsContainer.classList.add('hide');
     console.log('Started');
     shuffledQuestion = questions.sort(() => Math.random() - 0.5); //Shuffle and bring back questions in random order
     currentQuestionIndex = 0; //Will start at the very first question in the array
@@ -81,7 +79,6 @@ function setNextQuestion() {
             questionContainer.classList.add('hide');
             nextButton.classList.add('hide');
             aboutGame.classList.remove('hide');
-            aboutGame.innerText = "Great job!";
             displayEndScore(score);
             startButton.innerText = "Lightning round?";
             startButton.classList.remove('hide');
@@ -143,7 +140,6 @@ function selectAnswer(e) {
         questionContainer.classList.add('hide');
         nextButton.classList.add('hide');
         aboutGame.classList.remove('hide');
-        aboutGame.innerText = "Great job!";
         score.innerText = "Final score:", displayEndScore();
          // Call displayEndScore() when no more questions are left
         startButton.innerText = "Lightning round?";
@@ -175,15 +171,15 @@ function clearUp(element) {
 
 //Display the end score
 function displayEndScore() {
-    score.innerText = `Final Score: ${currentScore} out of 15`; // You can customize this text
+    score.innerText = `${currentScore} out of 15`; // You can customize this text
     
     // Display different responses to different scores
     if (currentScore === 15) {
-        score.innerText += "\nPerfect Score! I can tell you've watched a lot of Friends! Well done!";
+        aboutGame.innerText = "\nPerfect Score! I can tell you've watched a lot of Friends! Well done!";
     } else if (currentScore >= 10) {
-        score.innerText += "\nGreat job! You did well. Keep watching the show and you'll get a perfect score in no time!";
+        aboutGame.innerText = "\nGreat job! You did well. Keep watching the show and you'll get a perfect score in no time!";
     } else {
-        score.innerText += "\nKeep practicing. You'll get better!";
+        aboutGame.innerText = "\nKeep practicing. You'll get better!";
     }
 }
 

@@ -381,7 +381,7 @@ const questions = [{
         ],
     },
     {   number: 43,
-        question: "Wich friend hates Thanksgiving?",
+        question: "Which friend hates Thanksgiving?",
         answers: [
             { text: "Joey", correct: false },
             { text: "Monica", correct: false },
