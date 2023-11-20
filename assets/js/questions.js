@@ -1,3 +1,5 @@
+/*jshint esversion:6*/
+
 const questions = [{
         //1
         question: "What is the profession of Chandler Bing for the main part of the show?",
@@ -316,30 +318,30 @@ const questions = [{
     },
 ];
     /*{   //36
-        question: "",
+        question: "Who is secretly married to a Canadian ice dancer?",
         answers: [
-            { text: "Regina", correct: false },
-            { text: "Jill", correct: false },
-            { text: "Ursula", correct: true },
-            { text: "Janice", correct: false }
+            { text: "Monica", correct: false },
+            { text: "Joey", correct: false },
+            { text: "Phoebe", correct: true },
+            { text: "Chandler", correct: false }
         ]
     },
     {   //37
-        question: "",
+        question: "What type of dessert does Rachel try to make in the Thanksgiving episode in season 6?",
         answers: [
-            { text: "Joey", correct: false },
-            { text: "Ross", correct: false },
-            { text: "Gunther", correct: false },
-            { text: "Chandler", correct: true }
+            { text: "Brownies", correct: false },
+            { text: "Cheesecake", correct: false },
+            { text: "Cherrie pie", correct: false },
+            { text: "Trifle", correct: true }
         ],
     },
     {   //38
-        question: "",
+        question: "Which actress plays the woman who gets revenge on Chandler for childhood teasing?",
         answers: [
-            { text: "Cleaning", correct: true },
-            { text: "Shopping", correct: false },
-            { text: "Cooking", correct: false },
-            { text: "Painting", correct: false }
+            { text: "Julia Roberts", correct: true },
+            { text: "Sandra Bullock", correct: false },
+            { text: "Reese Witherspoon", correct: false },
+            { text: "Winona Ryder", correct: false }
         ]
     },
     {   //39

@@ -1,4 +1,5 @@
 
+/*jshint esversion:6*/
 
 // Variables
 const startButton = document.getElementById('start-button');
@@ -77,10 +78,10 @@ function setNextQuestion() {
         } else {
     
             quizEnded = true;
-            questionContainer.classList.add('hide')
+            questionContainer.classList.add('hide');
             nextButton.classList.add('hide');
             aboutGame.classList.remove('hide');
-            aboutGame.innerText = "Great job!"
+            aboutGame.innerText = "Great job!";
             displayEndScore(score);
             startButton.innerText = "Lightning round?";
             startButton.classList.remove('hide');
@@ -139,10 +140,10 @@ function selectAnswer(e) {
     } else {
         displayEndScore(); // Call displayEndScore() when no more questions are left
         quizEnded = true;
-        questionContainer.classList.add('hide')
+        questionContainer.classList.add('hide');
         nextButton.classList.add('hide');
         aboutGame.classList.remove('hide');
-        aboutGame.innerText = "Great job!"
+        aboutGame.innerText = "Great job!";
         score.innerText = "Final score:", displayEndScore();
          // Call displayEndScore() when no more questions are left
         startButton.innerText = "Lightning round?";
@@ -174,11 +175,9 @@ function clearUp(element) {
 
 //Display the end score
 function displayEndScore() {
-    
-    // Display the final score
     score.innerText = `Final Score: ${currentScore} out of 15`; // You can customize this text
     
-    // You can also add additional text or messages based on the final score
+    // Display different responses to different scores
     if (currentScore === 15) {
         score.innerText += "\nPerfect Score! Well done!";
     } else if (currentScore >= 10) {
@@ -188,25 +187,20 @@ function displayEndScore() {
     }
 }
 
-//Time and score
-function timerScore() {
-
-}
-
 // Show modal when rules are clicked
 rules.onclick = function() {
     modal.style.display = "block";
-}
+};
 // Close modal when "x" is clicked
 span.onclick = function() {
     modal.style.display = "none";
-}
+};
 // Close the modal when clicking outside the modal content
 window.onclick = function(event) {
     if (event.target == modal) {
         modal.style.display = "none";
     }
-}
+};
 
 
 
