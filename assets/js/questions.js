@@ -372,12 +372,12 @@ const questions = [{
         ],
     },
     {   //42
-        question: "",
+        question: "Who got stuck in a pair of leather pants during a date?",
         answers: [
-            { text: "Regina", correct: false },
-            { text: "Jill", correct: false },
-            { text: "Ursula", correct: true },
-            { text: "Janice", correct: false }
+            { text: "Monica", correct: false },
+            { text: "Chandler", correct: false },
+            { text: "Ross", correct: true },
+            { text: "Rachel", correct: false }
         ]
     },
     {   //43
@@ -386,7 +386,7 @@ const questions = [{
             { text: "Joey", correct: false },
             { text: "Ross", correct: false },
             { text: "Gunther", correct: false },
-            { text: "Chandler", correct: true }
+            { text: "", correct: true }
         ],
     },
     {   //44

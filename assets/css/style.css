@@ -236,10 +236,6 @@ header img {
         width: 65%;
         transition: 1s;
     }
-    #timer
-    #score {
-        
-    }
 }
 
 @media screen and (max-width: 500px) {
@@ -257,11 +253,6 @@ header img {
             font-size: 85%;
             width: 65%;
             transition: 1s;
-        }
-    
-        #timer
-        #score {
-            
         }
 
         .start-button,
