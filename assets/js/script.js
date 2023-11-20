@@ -179,9 +179,9 @@ function displayEndScore() {
     
     // Display different responses to different scores
     if (currentScore === 15) {
-        score.innerText += "\nPerfect Score! Well done!";
+        score.innerText += "\nPerfect Score! I can tell you've watched a lot of Friends! Well done!";
     } else if (currentScore >= 10) {
-        score.innerText += "\nGreat job! You did well!";
+        score.innerText += "\nGreat job! You did well. Keep watching the show and you'll get a perfect score in no time!";
     } else {
         score.innerText += "\nKeep practicing. You'll get better!";
     }
