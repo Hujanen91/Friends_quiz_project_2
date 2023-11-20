@@ -29,7 +29,7 @@ const questions = [{
         ],
     },
     {   //4
-        question: "What does Ross scream when trying to help move a couch into his apartment?",
+        question: "What does Ross scream when he, Rachel and Chandler are trying to move a couch into his apartment?",
         answers: [
             { text: "Pivot!", correct: true },
             { text: "Lift and slide!", correct: false },
@@ -65,7 +65,7 @@ const questions = [{
         ]
     },
     {   //8
-        question: "Which country does Chandler accidentally book a trip to while trying to hide from Janice?",
+        question: "Which country does Chandler accidentally book a trip to while trying to get away from Janice?",
         answers: [
             { text: "Yemen", correct: true },
             { text: "Island", correct: false },
@@ -299,7 +299,7 @@ const questions = [{
         ],
     },
     {   //34
-        question: "How is the nude man in the apartment across from Monica's better known?",
+        question: "What is the nickname of the nude man in the apartment across from Monica's?",
         answers: [
             { text: "That Naked Guy", correct: false },
             { text: "Mr. Heckles", correct: false },
@@ -313,7 +313,7 @@ const questions = [{
             { text: "A car", correct: true },
             { text: "A tv", correct: false },
             { text: "Money", correct: false },
-            { text: "Edna", correct: false }
+            { text: "A box of chocolates", correct: false }
         ],
     },
 ];
@@ -345,30 +345,30 @@ const questions = [{
         ]
     },
     {   //39
-        question: "",
+        question: "Which character says the very first line of the very first episode of the show?",
         answers: [
-            { text: "Fluffy", correct: false },
-            { text: "Snuggles", correct: false },
-            { text: "Hugsy", correct: true },
-            { text: "Puddles", correct: false }
+            { text: "Chandler", correct: false },
+            { text: "Joey", correct: false },
+            { text: "Monica", correct: true },
+            { text: "Gunther", correct: false }
         ],
     },
     {   //40
-        question: "",
+        question: "Joey stars in a musical about which historical figure?",
         answers: [
-            { text: "Teacher", correct: false },
-            { text: "Fashion Designer", correct: false },
-            { text: "Actor", correct: false },
-            { text: "Paleontologist", correct: true }
+            { text: "Joan of Arc", correct: false },
+            { text: "Napoleon", correct: false },
+            { text: "Albert Einstein", correct: false },
+            { text: "Sigmund Freud", correct: true }
         ]
     },
     {   //41
-        question: "",
+        question: "Monica dated a millionair, what was his name?",
         answers: [
-            { text: "Estelle", correct: true },
-            { text: "Lauren", correct: false },
-            { text: "Sally", correct: false },
-            { text: "Edna", correct: false }
+            { text: "Pete", correct: true },
+            { text: "John", correct: false },
+            { text: "Barry", correct: false },
+            { text: "Jack", correct: false }
         ],
     },
     {   //42
