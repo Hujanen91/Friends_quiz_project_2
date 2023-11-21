@@ -73,6 +73,7 @@ function setNextQuestion() {
     resetState();//Call resetState function to reset buttons and implement new questions
     
     //As long as quiz is under 15 questions get new questions in a shuffled order
+    //Push asked questions to its own array to not be called again
     if (!quizEnded && currentQuestionIndex < 15) {
         let nextIndex;
         do {
@@ -80,7 +81,6 @@ function setNextQuestion() {
         } while (usedQuestionIndices.includes(nextIndex));
 
         usedQuestionIndices.push(nextIndex);
-
         showQuestion(shuffledQuestion[currentQuestionIndex++]);
         
         //When quiz ends show final score, hide and show buttons that are needed.
@@ -90,8 +90,6 @@ function setNextQuestion() {
             nextButton.classList.add('hide');
             aboutGame.classList.remove('hide');
             displayEndScore(score);//Call function to display end score
-            startButton.innerText = "Lightning round?";
-            startButton.classList.remove('hide');
         }
 }
 
@@ -155,8 +153,7 @@ function selectAnswer(e) {
         nextButton.classList.add('hide');
         aboutGame.classList.remove('hide');
         score.innerText = "Final score:", displayEndScore();
-        startButton.innerText = "Lightning round?";
-        startButton.classList.remove('hide');
+        
     }
 }
 
@@ -188,11 +185,11 @@ function displayEndScore() {
     score.innerText = `${currentScore} out of 15`; // You can customize this text
     // Display different responses to different scores
     if (currentScore === 15) {
-        aboutGame.innerText = "\nPerfect Score! I can tell you've watched a lot of Friends! Well done!";
+        aboutGame.innerText = "Perfect Score! I can tell you've watched a lot of Friends! Well done!";
     } else if (currentScore >= 10) {
-        aboutGame.innerText = "\nGreat job! You did well. Keep watching the show and you'll get a perfect score in no time!";
+        aboutGame.innerText = "Great job! You did well. Keep watching the show and you'll get a perfect score in no time!";
     } else {
-        aboutGame.innerText = "\nKeep practicing. You'll get better!";
+        aboutGame.innerText = "Keep practicing. You'll get better!";
     }
 }
 
