@@ -99,9 +99,10 @@ header img {
     padding: 15px;
     margin: 5px 10px 5px 10px;
     width: 40%;
-    background-color: rgb(93, 64, 121);
+    background-color: rgb(155, 101, 0);
     border-radius: 25px;
-    border-color: rgb(255, 156, 7);
+    border-width: 5px;
+    border-color: rgb(176, 127, 221);
 }
 
 .timer-score,
@@ -259,8 +260,10 @@ header img {
     
         .button {
             font-size: 85%;
-            width: 65%;
+            width: 85%;
             transition: 1s;
+            padding-left: 7px;
+            padding-right: 7px;
         }
 
         .startbutton,
@@ -272,18 +275,15 @@ header img {
             text-align: center;
         }
         #timer,
-        #score {
-            width: 80%;
+        #score,
+        .back-button {
+            font-size: 85%;
+            width: 60%;
             margin: 0 auto;
         }
-    }
 
-@media screen and (max-width: 500px) {
-    .button {
-        width: 85%;
-        transition: 1s;
-        padding-left: 7px;
-        padding-right: 7px;
+        #results-container {
+            padding-bottom: 10px;
+        }
     }
-}
 }

@@ -3,7 +3,7 @@
 const questions = [{
         
         number: 1,
-        question: "What is the profession of Chandler Bing for the main part of the show?",
+        question: "What does Chandler Bing do for a living?",
         answers: [
             {text: "IT procurement manager", correct: true},
             {text: "Transponster", correct: false},
