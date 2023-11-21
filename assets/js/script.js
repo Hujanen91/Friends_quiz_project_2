@@ -34,24 +34,24 @@ let currentScore = 0;
 let shuffledQuestion;
 let currentQuestionIndex = 0;
 
-
 //Event listeners
 startButton.addEventListener('click', startGame);
 answerButton.addEventListener('click', selectAnswer);
 nextButton.addEventListener('click', setNextQuestion);
 
-// Start game
+// Start game. Code inspired from Web Dev Simplified
 function startGame() {
     // Hide buttons that are not supposed to show on start 
     startButton.classList.add('hide');
     rulesButton.classList.add('hide');
     aboutGame.classList.add('hide');
     timer.classList.add('hide');
-    console.log('Started');
+
+    usedQuestionIndices = []; //Reset the array of used questions
     shuffledQuestion = questions.sort(() => Math.random() - 0.5); //Shuffle and bring back questions in random order
     currentQuestionIndex = 0; //Will start at the very first question in the array
     questionContainer.classList.remove('hide');
-    setNextQuestion();
+    setNextQuestion();//Call the set next question function to prep for a question
     answerButton.classList.remove('hide');
     resultContainer.classList.remove('hide');
     backButton.classList.remove('hide');
@@ -68,41 +68,54 @@ function renderScore() {
     score.innerText = currentScore;
 }
 
-//Next question
+//Next question. Code inspired from Web Dev Simplified
 function setNextQuestion() {
-    resetState();
-    if (!quizEnded && currentQuestionIndex < 15) {
-        showQuestion(shuffledQuestion[currentQuestionIndex++]);
-        } else {
+    resetState();//Call resetState function to reset buttons and implement new questions
     
+    //As long as quiz is under 15 questions get new questions in a shuffled order
+    if (!quizEnded && currentQuestionIndex < 15) {
+        let nextIndex;
+        do {
+            nextIndex = Math.floor(Math.random() * questions.length);
+        } while (usedQuestionIndices.includes(nextIndex));
+
+        usedQuestionIndices.push(nextIndex);
+
+        showQuestion(shuffledQuestion[currentQuestionIndex++]);
+        
+        //When quiz ends show final score, hide and show buttons that are needed.
+        } else { 
             quizEnded = true;
             questionContainer.classList.add('hide');
             nextButton.classList.add('hide');
             aboutGame.classList.remove('hide');
-            displayEndScore(score);
+            displayEndScore(score);//Call function to display end score
             startButton.innerText = "Lightning round?";
             startButton.classList.remove('hide');
         }
-    }
+}
 
 // Get questions and answers
 function showQuestion(question) { 
-    
+
     resultContainer.classList.remove('hide');
     backButton.classList.remove('hide');
     questionElement.innerText = question.question;
 
+    //Get answers for each question and implement them in the answer-buttons
     if (question.answers && Array.isArray(question.answers)) {
       question.answers.forEach(answer => {
         const button = document.createElement('button');
         button.innerText = answer.text;
         button.classList.add('button');
+
         if (answer.correct) {
             button.dataset.correct = answer.correct;
         }
-        
         answerButton.appendChild(button); 
     });
+
+    // Give error if answers are not defined or in an array
     } else {
         console.error('Answers are not defined or not an array:', question.answers);
 }
@@ -122,6 +135,7 @@ function selectAnswer(e) {
     const selectedButton = e.target;
     const correct = selectedButton.dataset.correct === 'true';
 
+        //Stops the scorecount if the answer is incorrect
         if (!correct) {
             decrementScore();    
         }}
@@ -141,12 +155,12 @@ function selectAnswer(e) {
         nextButton.classList.add('hide');
         aboutGame.classList.remove('hide');
         score.innerText = "Final score:", displayEndScore();
-         // Call displayEndScore() when no more questions are left
         startButton.innerText = "Lightning round?";
         startButton.classList.remove('hide');
     }
 }
 
+//Display red or green when getting wrong or right answers
 function settingStatus(element, correct) {
     clearUp(element);
     if (correct === 'true') {
@@ -172,7 +186,6 @@ function clearUp(element) {
 //Display the end score
 function displayEndScore() {
     score.innerText = `${currentScore} out of 15`; // You can customize this text
-    
     // Display different responses to different scores
     if (currentScore === 15) {
         aboutGame.innerText = "\nPerfect Score! I can tell you've watched a lot of Friends! Well done!";
