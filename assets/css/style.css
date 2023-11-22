@@ -80,6 +80,10 @@ header img {
     border-color: #ff9c07;
 }
 
+a {
+    text-decoration: none;
+}
+
 /* Colors for buttons to highlight right and wrong answers */
 .correct {
     background: #488d48;
