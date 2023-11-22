@@ -9,7 +9,7 @@
 
 body {
     background-color: #ffe8bd;
-    background-image: url(../images/2802898.jpg);
+    background-image: url(../images/2802898.jpg); /* Image from https://wallpaperaccess.com/central-perk*/
     background-repeat: repeat;
     background-size: 100%;
 }
@@ -80,6 +80,7 @@ header img {
     border-color: #ff9c07;
 }
 
+/* Remove underline on 'back to start' button */
 a {
     text-decoration: none;
 }

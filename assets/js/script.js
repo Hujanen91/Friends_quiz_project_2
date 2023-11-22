@@ -38,6 +38,9 @@ let currentQuestionIndex = 0;
 startButton.addEventListener('click', startGame);
 answerButton.addEventListener('click', selectAnswer);
 nextButton.addEventListener('click', setNextQuestion);
+backButton.addEventListener('click', function(e) {
+    location.reload();
+  }, false);
 
 // Start game. Code inspired from Web Dev Simplified
 function startGame() {
