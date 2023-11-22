@@ -152,8 +152,7 @@ function selectAnswer(e) {
         questionContainer.classList.add('hide');
         nextButton.classList.add('hide');
         aboutGame.classList.remove('hide');
-        score.innerText = "Final score:", displayEndScore();
-        
+        displayEndScore();
     }
 }
 
@@ -185,11 +184,11 @@ function displayEndScore() {
     score.innerText = `${currentScore} out of 15`; // You can customize this text
     // Display different responses to different scores
     if (currentScore === 15) {
-        aboutGame.innerText = "Perfect Score! I can tell you've watched a lot of Friends! Well done!";
+        aboutGame.innerText = "You aced the Friends quiz like Joey aced the art of not sharing his food. I guess we could say you're the Ross Geller of trivia: unstoppable and a bit too proud of your accomplishments! Time to celebrate with Monica's turkey dance!";
     } else if (currentScore >= 10) {
-        aboutGame.innerText = "Great job! You did well. Keep watching the show and you'll get a perfect score in no time!";
+        aboutGame.innerText = "Well, you may not be on a break, but your quiz score sure is! I guess you're the Chandler of this quiz, could you BE any more average?";
     } else {
-        aboutGame.innerText = "Keep practicing. You'll get better!";
+        aboutGame.innerText = "Well, your Friends knowledge is so low, even Janice would say, 'Oh my god!'. Looks like you'll be in 'The One with the Low Score' episode.";
     }
 }
 
