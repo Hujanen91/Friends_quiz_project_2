@@ -8,11 +8,7 @@ const answerButton = document.getElementById('answer-buttons');
 const resultContainer = document.getElementById('results-container');
 const questionContainer = document.getElementById('question-container');
 const questionElement = document.getElementById('question');
-const tryAgainContainer = document.getElementById('try-again-container');
 const aboutGame = document.getElementById('about-game');
-const scoreValue = document.getElementById('scoreValue');
-const tryAgain = document.getElementById('try-again');
-const lightningRound = document.getElementById('lightning');
 const nextButton = document.getElementById('next-button');
 const backButton = document.getElementById('back-button');
 const score = document.getElementById('score');
@@ -23,11 +19,6 @@ let quizEnded = false;
 var modal = document.getElementById('myModal');
 var rules = document.getElementById('game-rules-button');
 var span = document.getElementsByClassName('close')[0];
-
-// Set timer for lightning round
-const timePerQuestion = 20;
-let timeLeft = timePerQuestion;
-let timerInterval;
 
 // Declare and initialize currentScore
 let currentScore = 0; 

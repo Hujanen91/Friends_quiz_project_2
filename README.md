@@ -132,76 +132,56 @@ A clear header that shows the user what the website is all about and some text t
 
 ## Testing
 ### Links, Images, Icons and Buttons:
-#### Links:
-- All the links are working and will take you to the correct page.
-#### Icons:
-- All the internal links are working and will take you to the correct page. 
 #### Buttons:
 - All the buttons are working and will take you to the correct page.
 - All buttons do what they are supposed to do by the users interaction.
 ### Game logic:
-- The questions load correctly depending on the difficulty chosen by the user.
-- All questions in the chosen difficulty displays randomly each time.
+- All questions displays randomly each time.
 - The score increments by 1 if the user has clicked the correct answer.
-- The score does not increment if the user has clicked the wrong answer.
-- The Score does not increment if the timer reaches 0.
-- The timer stops when the user has chosen an answer.
-- The countdown resets as it should when the player moves to the next question.
-- The timer and hourglass color gets red when the timer is at 5 seconds or lower. 
-- The user cannot play without a username. 
-- The buttons gets disabled when the timer reaches 0, and the user cannot answer.
+- The score does not increment if the user has clicked the wrong answer. 
 - The buttons gets disabled when the user has clicked an answer.
 - The buttons gets enabled when the user clicks the next question button.
 - The correct message gets displayed when the game is finished according to the amount of correct answers the user got. 
-- The play again button does not reset the username.
-- The play again button resets the questions and the score. 
+- The Back to start button resets the questions and the score and takes the user back to the start page where they can choose to play again. 
 --- 
 ## Code validation
 - All code on the site has been validated, HTML,CSS & JavaScript, by use of the W3C validator and Jshint. 
 ### HTML
 - W3C - HTML validator: (https://validator.w3.org/)
-    - W3C Validator for HTML shows no errors on the index.html file.
-    - The W3C validator for HTML shows 3 warnings. These warnings are due to empty headlines in the HTML file. Line, 116,154,156. These headlines are empty because they are targetet with JavaScript to display information depending on the game and the users interaction and therefore have no static headline.
-        - Line 116: Targets by its ID, "question-text" in the script.js file to present the user with a question that the user shall answer in the game.
-        - Line 154: Targets by its ID, "status-level" in the script.js file to present the user with the username the user entered when starting the game, with a custom response depending on what score the user got.
-        - Line 156: Targets by its ID, "finished-score-text" in the script.js file to present the user with the amount of correct answers they got out of the total amount of questions that were presented.
+    - W3C Validator for HTML shows no errors or warnings on the index.html file.
+    - The W3C validator for HTML did give 2 errors before I corrected them. A stray div was found and an a linking to them index.html to reset the game was coded inside a button wich wasnt allowed. I removed the div and I removed the a attribute and created a small function in javascript to reset my quiz and send the user to the first page as soon as they pressed the "Back to start" button no matter where in the quiz they are.
 <details>
-<summary>Image of the HTML validation</summary>
-<img src="documentation/screenshots/html-validation.JPG">
+<summary>Image of the HTML validation error</summary>
+<img src="docs/error_w3_html.png">
 </details>
 <details>
-<summary>Image of the 404 Error page HTML validation</summary>
-<img src="documentation/screenshots/error-page-validation.JPG">
+<summary>Image of the HTML validation after fixing the errors</summary>
+<img src="docs/w3_cleared.png">
 </details>
 
 ### CSS
 - W3C - CSS Validator: (https://jigsaw.w3.org/css-validator/)
-    - W3C Validator for CSS shows no errors in the style.css file.
-    - The W3C Validator shows a warning "Imported style sheets are not checked in direct input and file upload modes" - This means that the validator have checked all CSS code but it cannot check the imported url, in this case it refers to the googlefonts import url. 
+    - W3C Validator for CSS shows no errors or warnings in the style.css file.
 <details>
 <summary>Image of the CSS validation</summary>
-<img src="documentation/screenshots/jigsaw-validation.JPG">
-</details>
-<details>
-<summary>Image of the shown error</summary>
-<img src="documentation/screenshots/jigsaw-warning.JPG">
+<img src="docs/w3c_cleared.png">
 </details>
 
 ### JavaScript
 - Jshint: (https://jshint.com/)
     - Jshint validator shows no errors in any Javascript file.
 - Questions.js:
-    - The Jshint validator shows when questions.js are tested that there are 3 unused variables. This refers to the Lines 1, 83 and 165 in the questions.js file. These variables are defined in another js file, the script.js. This is why this information is presented by jshint.com. The variables can be found on line 171, 174 and 177 in the script.js file.
+    - The Jshint validator shows when questions.js are tested that there are 2 undefined variables. This refers to the Lines 14 and 473 in the questions.js file. These variables are defined in another js file, the script.js. This is why this information is presented by jshint.com.
 <details>
 <summary>Image of Jshint validation of the questions.js file</summary>
-<img src="documentation/screenshots/jshint-java-questions.JPG">
+<img src="docs/jshint_questions_cleared.png">
 </details>
 
 - Script.js:
-    -  The Jshint validator shows when script.js are tested that there are 3 undefined variables. This refers to the lines: 171, 174 and 177 in the questions.js file. These variables are defined in another js file, the question.js. This is why this information is presented by jshint.com. The variables can be found on lines 1, 83 and 165 in the question.js file.
+    -  The Jshint validator shows when script.js are tested that there are 2 undefined variables. This refers to the lines: 54, 55, 84, 85 and 87 in the script.js file. These variables are defined in another js file, the question.js. This is why this information is presented by jshint.com. The variables can be found on lines 1, 83 and 165 in the question.js file.
 <details>
 <summary>Image of Jshint validation of the script.js file</summary>
-<img src="documentation/screenshots/jshint-java-script.JPG">
+<img src="docs/jshint_cleared.png">
 </details>
 
 ---
@@ -212,36 +192,31 @@ A clear header that shows the user what the website is all about and some text t
 - Tested browsers: 
     - Google Chrome
     - Firefox
+    - Safari
     - Microsoft Edge
 
 ## Device testing on different devices
 - The site has been tested through Chrome Dev tools for responsivness. The site is responsive on all sizes.
 - Simulation test with devices: (the site is responsive and works on all simulated devices)
-    - iPhone 6/7/8/12
-    - iPhone 6/7/8 Plus
-    - iPhone X
     - iPhone XR
     - iPhone 12 Pro
     - iPad Air (Rotate)
     - iPad Mini (Rotate)
-    - Pixel 5
-    - Samsung Galaxy S20 Ultra
-    - Samsung Galaxy A51/71
+    - Galaxy fold
+    - Samsung Galaxy S21 Ultra
+    - Samsung Galaxy Z fold
 - Tested on real devices:
-    - Nothing Phone 1
+    - Apple ipad air
     - Laptop
     - PC
+    - Google pixel 8 pro
 
 ## Testing tools used
 - I have tested the site in Chrome Dev tools. 
-- I have tested the site using Lighthouse in Chrome Dev Tools, for both Mobile and Desktop. Results can be found below:
+- I have tested the site using Lighthouse in Chrome Dev Tools, for both Mobile and Desktop with a 100 in score on everything on both mobile and desktop. Results can be found below on the mobile testing:
 <details>
-<summary>Desktop Lighthouse report:</summary>
-<img src="documentation/screenshots/lighthouse-desktop.JPG">
-</details>
-<details>
-<summary>Mobile Lighthouse report:</summary>
-<img src="documentation/screenshots/lighthouse-mobile.JPG">
+<summary>Lighthouse report:</summary>
+<img src="docs/lighthouse_testing.png">
 </details>
 
 ---
