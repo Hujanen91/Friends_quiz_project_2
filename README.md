@@ -122,7 +122,7 @@ A clear header that shows the user what the website is all about and some text t
 ### Finished Section
 - When the user arrives at the last page after answering 15 questions the total score vs total number of questions will be displayed.
 - Depending on the score that the user got, different messages are displayed telling the user how great of a job they did. 
-- Below that is the score shown for the user,""x" out of 10".
+- Below that is the score shown for the user,""x" out of 15".
 - Below that is the "Back to start" button that will send the user back to start giving them the opportunity to play again.
 <details>
 <summary><b>Screenshot of Finished page with 14 out of 15 correct answers</b></summary>
@@ -131,7 +131,7 @@ A clear header that shows the user what the website is all about and some text t
 --- 
 
 ## Testing
-### Links, Images, Icons and Buttons:
+### Icons, Questions, Answers and Buttons:
 #### Buttons:
 - All the buttons are working and will take you to the correct page.
 - All buttons do what they are supposed to do by the users interaction.
