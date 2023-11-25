@@ -416,47 +416,43 @@ const questions = [{
             { text: "It was filled with junk", correct: true }
         ],
     },
-];
-    /*{ number: 47,
-        question: "",
+    { number: 47,
+        question: "What is the name of the book that Joey keeps in the freezer?",
         answers: [
-            { text: "Estelle", correct: true },
-            { text: "Lauren", correct: false },
-            { text: "Sally", correct: false },
-            { text: "Edna", correct: false }
+            { text: "The Shining", correct: true },
+            { text: "Cujo", correct: false },
+            { text: "Little Women", correct: false },
+            { text: "Carrie", correct: false }
         ],
     },
-    {   //48
-        number: 48,
-        question: "",
+    {   number: 48,
+        question: "Phoebe dated David the scientist until he had to move where for work?",
         answers: [
-            { text: "Regina", correct: false },
-            { text: "Jill", correct: false },
-            { text: "Ursula", correct: true },
-            { text: "Janice", correct: false }
+            { text: "Paris, France", correct: false },
+            { text: "Nova Scotia, Canada", correct: false },
+            { text: "Minsk, Belarus", correct: true },
+            { text: "Sana, Yemen", correct: false }
         ]
     },
-    {   //49
-        number: 49,
-        question: "",
+    {   number: 49,
+        question: "Which character is Phoebe's delivery room doctor obsessed with?",
         answers: [
-            { text: "Joey", correct: false },
-            { text: "Ross", correct: false },
-            { text: "Gunther", correct: false },
-            { text: "Chandler", correct: true }
+            { text: "Fez", correct: false },
+            { text: "Al Bundy", correct: false },
+            { text: "Steve Urkel", correct: false },
+            { text: "Fonzie", correct: true }
         ],
     },
-    {   //50
-        number: 50,
-        question: "",
+    {   number: 50,
+        question: "Why is Joey's character, Dr. Drake Ramoray, killed off on Days of Our Lives?",
         answers: [
-            { text: "Cleaning", correct: true },
-            { text: "Shopping", correct: false },
-            { text: "Cooking", correct: false },
-            { text: "Painting", correct: false }
+            { text: "Joey stated that he wrote his own lines in an interview.", correct: true },
+            { text: "Joey was always late for work", correct: false },
+            { text: "Joey destroyd some camera crew equipment", correct: false },
+            { text: "Joey could never remember his lines", correct: false }
         ]
     }
 ];
-*/
+
 
 let usedQuestionIndices = [];

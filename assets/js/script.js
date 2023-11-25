@@ -175,7 +175,7 @@ function clearUp(element) {
 
 //Display the end score
 function displayEndScore() {
-    score.innerText = `${currentScore} out of 15`; // You can customize this text
+    score.innerText = `${currentScore} out of 15`;
     // Display different responses to different scores
     if (currentScore === 15) {
         aboutGame.innerText = "You aced the Friends quiz like Joey aced the art of not sharing his food. I guess we could say you're the Ross Geller of trivia: unstoppable and a bit too proud of your accomplishments! Time to celebrate with Monica's turkey dance!";
