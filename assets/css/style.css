@@ -276,7 +276,9 @@ header img {
             width: 55%;
         }
         .next-button {
-            width: 80%;
+            font-size: 85%;
+            width: 60%;
+            padding-top: 10px;
             text-align: center;
         }
         #timer,
