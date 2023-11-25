@@ -39,30 +39,37 @@ function startGame() {
     rulesButton.classList.add('hide');
     aboutGame.classList.add('hide');
 
-    usedQuestionIndices = []; //Reset the array of used questions
-    shuffledQuestion = questions.sort(() => Math.random() - 0.5); //Shuffle and bring back questions in random order
-    currentQuestionIndex = 0; //Will start at the very first question in the array
+    //Reset the array of used questions
+    usedQuestionIndices = []; 
+    //Shuffle and bring back questions in random order
+    shuffledQuestion = questions.sort(() => Math.random() - 0.5); 
+    //Will start at the very first question in the array
+    currentQuestionIndex = 0; 
     questionContainer.classList.remove('hide');
-    setNextQuestion();//Call the set next question function to prep for a question
+    //Call the set next question function to prep for a question
+    setNextQuestion();
     answerButton.classList.remove('hide');
     resultContainer.classList.remove('hide');
     backButton.classList.remove('hide');
 }
 
-// Update the player's score
+// Update the player's score. Code inspired from Web Dev Simplified
 function updateScore() {
-    currentScore++; // Increment the score
-    renderScore(); // Update the score display
+    // Increment the score
+    currentScore++; 
+    // Update the score display
+    renderScore(); 
 }
 
-// Update the score by displaying correct clicked answers
+// Update the score by displaying correct clicked answers.
 function renderScore() {
     score.innerText = currentScore;
 }
 
 //Next question. Code inspired from Web Dev Simplified
 function setNextQuestion() {
-    resetState();//Call resetState function to reset buttons and implement new questions
+    //Call resetState function to reset buttons and implement new questions
+    resetState();
     
     //As long as quiz is under 15 questions get new questions in a shuffled order
     //Push asked questions to its own array to not be called again
@@ -81,11 +88,12 @@ function setNextQuestion() {
             questionContainer.classList.add('hide');
             nextButton.classList.add('hide');
             aboutGame.classList.remove('hide');
-            displayEndScore(score);//Call function to display end score
+            //Call function to display end score
+            displayEndScore(score);
         }
 }
 
-// Get questions and answers
+// Get questions and answers. Code inspired from Web Dev Simplified
 function showQuestion(question) { 
 
     resultContainer.classList.remove('hide');
@@ -112,6 +120,7 @@ function showQuestion(question) {
 }
 
 //Reset buttons when clicking next to implement new questions
+// Code inspired from Web Dev Simplified
 function resetState() {
     nextButton.classList.add('hide');
     while (answerButton.firstChild) {
@@ -119,7 +128,7 @@ function resetState() {
     }
 }
 
-//Selected answer
+//Selected answer. Code inspired from Web Dev Simplified
 function selectAnswer(e) {
     if (!quizEnded) {
     const selectedButton = e.target;
@@ -139,7 +148,8 @@ function selectAnswer(e) {
     if (shuffledQuestion.length > currentQuestionIndex + 1) {
         nextButton.classList.remove('hide');
     } else {
-        displayEndScore(); // Call displayEndScore() when no more questions are left
+        // Call displayEndScore() when no more questions are left
+        displayEndScore(); 
         quizEnded = true;
         questionContainer.classList.add('hide');
         nextButton.classList.add('hide');
@@ -184,15 +194,15 @@ function displayEndScore() {
     }
 }
 
-// Show modal when rules are clicked
+// Show modal when rules are clicked. Rules Modal from w3schools
 rules.onclick = function() {
     modal.style.display = "block";
 };
-// Close modal when "x" is clicked
+// Close modal when "x" is clicked. Rules Modal from w3schools
 span.onclick = function() {
     modal.style.display = "none";
 };
-// Close the modal when clicking outside the modal content
+// Close the modal when clicking outside the modal content. Rules Modal from w3schools
 window.onclick = function(event) {
     if (event.target == modal) {
         modal.style.display = "none";
