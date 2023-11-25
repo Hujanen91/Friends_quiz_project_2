@@ -305,7 +305,7 @@ I solved this by adding in a eventListener on the "backButton" in script.js (lin
 <img src="docs/answer_clicked.png">
 </details>
 <details>
-<summary>Screenshot of Finished page with 1-9 correct answers</summary>
+<summary>Screenshot of Finished page with 0-9 correct answers</summary>
 <img src="documentation/screenshots/1-4-correct-answers.png">
 </details>
 <details>
@@ -321,31 +321,31 @@ I solved this by adding in a eventListener on the "backButton" in script.js (lin
 ### Below is captured screenshots of the website on a phone sized screen:
 <details>
 <summary>Screenshot of Start page</summary>
-<img src="documentation/screenshots/index-ps-desktop.png">
+<img src="docs/mobile_start.jpg">
 </details>
 <details>
 <summary>Screenshot of Rules modal</summary>
-<img src="documentation/screenshots/rules-ps-desktop.png">
+<img src="docs/mobile_modal_rules.jpg">
 </details>
 <details>
 <summary>Screenshot of questions and answers page</summary>
-<img src="documentation/screenshots/difficulties-ps-desktop.png">
+<img src="docs/mobile_question_answers.jpg">
 </details>
 <details>
 <summary>Screenshot of when answer has been picked</summary>
-<img src="documentation/screenshots/questions-ps-desktop.png">
+<img src="docs/mobile_answer_picked.jpg">
 </details>
 <details>
-<summary>Screenshot of Finished page with 1-9 correct answers</summary>
-<img src="documentation/screenshots/1-4-correct-answers.png">
+<summary>Screenshot of Finished page with 0-9 correct answers</summary>
+<img src="docs/mobile_score_0-9.jpg">
 </details>
 <details>
 <summary>Screenshot of Finished page with 10-14 correct answers</summary>
-<img src="documentation/screenshots/5-9-correct-answers.png">
+<img src="docs/mobile_score_10-14.jpg">
 </details>
 <details>
 <summary>Screenshot of Finished page with 15 correct answers</summary>
-<img src="documentation/screenshots/10-correct-answers.png">
+<img src="docs/mobile_score_15.jpg">
 </details>
 
 ---

@@ -448,7 +448,7 @@ const questions = [{
         answers: [
             { text: "Joey stated that he wrote his own lines in an interview.", correct: true },
             { text: "Joey was always late for work", correct: false },
-            { text: "Joey destroyd some camera crew equipment", correct: false },
+            { text: "Joey destroyed some camera crew equipment", correct: false },
             { text: "Joey could never remember his lines", correct: false }
         ]
     }
