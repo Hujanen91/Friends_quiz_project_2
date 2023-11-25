@@ -380,8 +380,5 @@ I solved this by adding in a eventListener on the "backButton" in script.js (lin
     - Link: (https://icons8.com/icon/4qlkCQverrIB/friends-tv-series ) 
 
 ### Readme.md file:
-- I used the markdown cheat-sheet to help me with the readme.md file.
-    - Link: (https://www.markdownguide.org/cheat-sheet/)
-
 - I got help with the readme file from CodeInstitutes samplereadme.
     - Link : (https://github.com/code-institute-solutions/samplereadme)
