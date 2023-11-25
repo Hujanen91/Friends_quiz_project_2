@@ -289,97 +289,63 @@ I solved this by adding in a eventListener on the "backButton" in script.js (lin
 
 ### Below is captured screenshots of the website on Desktop:
 <details>
-<summary>Screenshot of Home page</summary>
-<img src="documentation/screenshots/index-ps-desktop.png">
+<summary>Screenshot of Start page</summary>
+<img src="docs/friends_homepage.png">
 </details>
 <details>
-<summary>Screenshot of Home page with no username</summary>
-<img src="documentation/screenshots/index-ps-nousername-desktop.png">
+<summary>Screenshot of Rules modal</summary>
+<img src="docs/game_rules_modal.png">
 </details>
 <details>
-<summary>Screenshot of Rules page</summary>
-<img src="documentation/screenshots/rules-ps-desktop.png">
+<summary>Screenshot of questions and answers page</summary>
+<img src="docs/questions_answers_page.png">
 </details>
 <details>
-<summary>Screenshot of Difficulty page</summary>
-<img src="documentation/screenshots/difficulties-ps-desktop.png">
+<summary>Screenshot of when answer has been picked</summary>
+<img src="docs/answer_clicked.png">
 </details>
 <details>
-<summary>Screenshot of Questions page</summary>
-<img src="documentation/screenshots/questions-ps-desktop.png">
-</details>
-<details>
-<summary>Screenshot of Questions timedout</summary>
-<img src="documentation/screenshots/questions-timeout-ps-desktop.png">
-</details>
-<details>
-<summary>Screenshot of Finished page with 0 correct answers</summary>
-<img src="documentation/screenshots/0-correct-answers.png">
-</details>
-<details>
-<summary>Screenshot of Finished page with 1-4 correct answers</summary>
+<summary>Screenshot of Finished page with 1-9 correct answers</summary>
 <img src="documentation/screenshots/1-4-correct-answers.png">
 </details>
 <details>
-<summary>Screenshot of Finished page with 5-9 correct answers</summary>
-<img src="documentation/screenshots/5-9-correct-answers.png">
+<summary>Screenshot of Finished page with 10-14 correct answers</summary>
+<img src="docs/end_score.png">
 </details>
 <details>
-<summary>Screenshot of Finished page with 10 correct answers</summary>
+<summary>Screenshot of Finished page with 15 correct answers</summary>
 <img src="documentation/screenshots/10-correct-answers.png">
 </details>
 
 
 ### Below is captured screenshots of the website on a phone sized screen:
 <details>
-<summary>Screenshot of Home page</summary>
-<img src="documentation/screenshots/index-ps-phone.png">
+<summary>Screenshot of Start page</summary>
+<img src="documentation/screenshots/index-ps-desktop.png">
 </details>
 <details>
-<summary>Screenshot of Home page with no username</summary>
-<img src="documentation/screenshots/index-ps-nousername-phone.png">
+<summary>Screenshot of Rules modal</summary>
+<img src="documentation/screenshots/rules-ps-desktop.png">
 </details>
 <details>
-<summary>Screenshot of Rules page</summary>
-<img src="documentation/screenshots/rules-ps-phone.png">
+<summary>Screenshot of questions and answers page</summary>
+<img src="documentation/screenshots/difficulties-ps-desktop.png">
 </details>
 <details>
-<summary>Screenshot of Difficulty page</summary>
-<img src="documentation/screenshots/difficulties-ps-phone.png">
+<summary>Screenshot of when answer has been picked</summary>
+<img src="documentation/screenshots/questions-ps-desktop.png">
 </details>
 <details>
-<summary>Screenshot of Questions page</summary>
-<img src="documentation/screenshots/questions-ps-phone.png">
+<summary>Screenshot of Finished page with 1-9 correct answers</summary>
+<img src="documentation/screenshots/1-4-correct-answers.png">
 </details>
 <details>
-<summary>Screenshot of Questions timedout</summary>
-<img src="documentation/screenshots/questions-timeout-ps-phone.png">
+<summary>Screenshot of Finished page with 10-14 correct answers</summary>
+<img src="documentation/screenshots/5-9-correct-answers.png">
 </details>
 <details>
-<summary>Screenshot of Finished page with 0 correct answers</summary>
-<img src="documentation/screenshots/0-correct-answers-phone.png">
-</details>
-<details>
-<summary>Screenshot of Finished page with 1-4 correct answers</summary>
-<img src="documentation/screenshots/1-4-correct-answers-phone.png">
-</details>
-<details>
-<summary>Screenshot of Finished page with 5-9 correct answers</summary>
-<img src="documentation/screenshots/5-9-correct-answers-phone.png">
-</details>
-<details>
-<summary>Screenshot of Finished page with 10 correct answers</summary>
-<img src="documentation/screenshots/10-correct-answers-phone.png">
-</details>
-
-## Captured screenshots of the Error 404 page:
-<details>
-<summary>Screenshot of the Error 404 page on a desktop</summary>
-<img src="documentation/screenshots/error-page-desktop.png">
-</details>
-<details>
-<summary>Screenshot of the Error 404 page on a phone</summary>
-<img src="documentation/screenshots/error-page-phone.png">
+<summary>Screenshot of Finished page with 15 correct answers</summary>
+<img src="documentation/screenshots/10-correct-answers.png">
 </details>
 
 ---
@@ -391,35 +357,27 @@ I solved this by adding in a eventListener on the "backButton" in script.js (lin
 - Under Source, click the dropdown called None and select Main Branch.
 - The page will refresh automatically and generate a link to your website.
 ---
-### Forking the GitHub Repository
-By forking the GitHub Repository we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original repository by using the following steps...
 
-- Log in to GitHub and locate the GitHub Repository
-- At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
-- You should now have a copy of the original repository in your GitHub account.
-### Making a Local Clone
-- Log in to GitHub and locate the GitHub Repository
-- Under the repository name, click "Clone or download".
-- To clone the repository using HTTPS, under "Clone with HTTPS", copy the link.
-- Open Git Bash
-- Change the current working directory to the location where you want the cloned directory to be made.
-- Type git clone, and then paste the URL you copied in Step 3.
-$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
-- Press Enter. Your local clone will be created.
----
 ## Credits
 
+### Code:
+- I followed Web Dev Simplified video on how to create a quiz in javascript to get me started and then I modified it to work with my code and my quiz. Inspired codes in script.js is marked down above the code. 
+    - Link to video (https://www.youtube.com/watch?app=desktop&v=riDzcEQbX6k)
+
+- The modal for the game rules is from W3Schools
+    - Link (https://www.w3schools.com/howto/howto_css_modals.asp)
+
+- The rest of the codes in script.js is created by me with help and inspiration from a lot of googling, reading in different forums and looking around at other peoples codes and picking out what I think would work, use it as inspiration and modifying snippets to make it work with my code.-
+
 ### Images:
-- The  background images is from: https://www.wallpaperflare.com/
-    - Link (https://www.wallpaperflare.com/brown-and-green-floral-wall-decor-slytherin-sonserina-harry-potter-wallpaper-phfmf)
+- The  background images is from: https://wallpaperaccess.com/
+    - Link: (https://wallpaperaccess.com/central-perk)
+    - Images from wallpaperacces is okay for non-commercial use:
+    (https://wallpaperaccess.com/faq#personaluse)
 
 ### Title Icon:
 - Icon credit, Favicon.
-    - Link: (https://www.favicon.cc/?action=icon&file_id=78400) 
-
-### Fonts:
-- I used google fonts "Roboto" as my main font:
-    - Link (https://fonts.google.com/)
+    - Link: (https://icons8.com/icon/4qlkCQverrIB/friends-tv-series ) 
 
 ### Readme.md file:
 - I used the markdown cheat-sheet to help me with the readme.md file.
