@@ -7,6 +7,7 @@
     text-align: center;
 }
 
+/* Styling for main content in body */
 body {
     background-color: #ffe8bd;
     background-image: url(../images/2802898.jpg); /* Image from https://wallpaperaccess.com/central-perk*/
@@ -14,10 +15,12 @@ body {
     background-size: 100%;
 }
 
+/* Style font size of h1 element */
 h1 {
     font-size: 24px;
 }
 
+/* Styling for header image */ 
 header img {
     width: 50%;
     height: 35%;
@@ -27,6 +30,7 @@ header img {
     padding: 25px;
 }
 
+/* Styling for main div containing all the content */
 #main-div {
     background-color: #7e6892;
     width: 50%;
@@ -35,7 +39,7 @@ header img {
     padding: 25px;
     margin-bottom: 25px;
 }
-
+ 
 #main-div-congrats {
     border-style: double;
     border-color: #5d4079;
@@ -45,6 +49,7 @@ header img {
     padding: 25px;
 }
 
+/* Styling for the about game section on start page */
 #about-game {
     border-style: double;
     border-color: #5d4079;
@@ -54,6 +59,7 @@ header img {
     padding: 15px;
 }
 
+/* Styling for questions-section when game has started */
 #question {
     border-style: double;
     font-size: 20px;
@@ -62,10 +68,12 @@ header img {
     padding: 25px
 }
 
+/* h1 styling */ 
 #about-game h1 {
     margin-bottom: 25px;
 }
 
+/* Styling for answers buttons */ 
 #answer-buttons {
     padding: 10px;
 }
@@ -116,7 +124,6 @@ a {
 }
 
 /* Styling with hover effect for every clickable button */
-
 .startbutton:hover, 
 .rules-button:hover,  
 .try-again-button:hover, 
@@ -139,7 +146,6 @@ button.answered{
     pointer-events: none;
 }
 
-
 /* The Modal (background) code from W3Schools */
 .modal {
     display: none;
@@ -155,6 +161,7 @@ button.answered{
 }
 
 /* Modal Content/Box */
+/* Modal is from W3Schools, link can be found in README */
 .rules-content {
     background-color: #aa711b;
     margin: 15% 25% auto;
@@ -163,7 +170,6 @@ button.answered{
     border-radius: 25px;
 }
 
-/* The Close Button */
 .close {
     color: #aaa;
     float: right;
@@ -186,7 +192,6 @@ button.answered{
 
 
 /* Responsive styling */
-
 @media screen and (max-width: 1200px) {
     .button {
             width: 45%;
