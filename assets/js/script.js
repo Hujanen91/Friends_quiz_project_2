@@ -12,7 +12,6 @@ const aboutGame = document.getElementById('about-game');
 const nextButton = document.getElementById('next-button');
 const backButton = document.getElementById('back-button');
 const score = document.getElementById('score');
-let timer = document.getElementById('timer');
 let quizEnded = false;
 
 // Rules Modal from w3schools
@@ -39,7 +38,6 @@ function startGame() {
     startButton.classList.add('hide');
     rulesButton.classList.add('hide');
     aboutGame.classList.add('hide');
-    timer.classList.add('hide');
 
     usedQuestionIndices = []; //Reset the array of used questions
     shuffledQuestion = questions.sort(() => Math.random() - 0.5); //Shuffle and bring back questions in random order
