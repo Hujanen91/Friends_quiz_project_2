@@ -190,6 +190,16 @@ button.answered{
     display: none;
 }
 
+.error-page {
+    align-items: center;
+    margin: 0 auto;
+}
+
+.error {
+    color: white;
+    align-content: center;
+}
+
 
 /* Responsive styling */
 @media screen and (max-width: 1200px) {
