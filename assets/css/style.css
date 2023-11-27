@@ -108,7 +108,8 @@ a {
 .try-again-button, 
 .lightning-round,
 .next-button,
-.back-button {
+.back-button,
+#error-backbutton {
     padding: 12px;
     margin: 5px 10px 5px 10px;
     width: 40%;
@@ -192,11 +193,17 @@ button.answered{
 
 .error-page {
     align-items: center;
-    margin: 0 auto;
+    background-color: #5d4079;
+    width: 85%;
+    margin-top: 25%;
+    padding: 50px;
+    border-radius: 25px;
 }
 
 .error {
     color: white;
+    font-size: 18px;
+    padding-bottom: 10px;
     align-content: center;
 }
 

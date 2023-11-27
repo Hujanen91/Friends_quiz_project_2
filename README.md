@@ -128,6 +128,14 @@ A clear header that shows the user what the website is all about and some text t
 <summary><b>Screenshot of Finished page with 14 out of 15 correct answers</b></summary>
 <img src="docs/end_score.png">
 </details>
+
+### 404 page
+- If the user types in the wrong adress the 404 page will display to tell the user that the page doesn't exist.
+<details>
+<summary><b>Screenshot of 404 page</b></summary>
+<img src="docs/end_score.png">
+</details>
+
 --- 
 
 ## Testing
