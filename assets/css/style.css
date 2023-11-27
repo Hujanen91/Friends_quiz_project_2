@@ -89,7 +89,7 @@ header img {
 }
 
 /* Remove underline on 'back to start' button */
-a {
+a, .error-backbutton {
     text-decoration: none;
     padding: 12px;
     margin: 5px 10px 5px 10px;
@@ -100,7 +100,8 @@ a {
     border-color: #b07fdd;
 }
 
-a:hover {
+a:hover,
+.error-backbutton:hover {
     background-color: #ff9c07;
     border-color: #5d4079;
     transition: 1s;
