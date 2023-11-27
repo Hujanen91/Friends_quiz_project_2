@@ -89,21 +89,18 @@ header img {
 }
 
 /* Remove underline on 'back to start' button */
-a, .error-backbutton {
+a, 
+.error-backbutton {
     text-decoration: none;
     padding: 12px;
     margin: 5px 10px 5px 10px;
-    width: 40%;
     background-color: #9b6500;
     border-radius: 25px;
-    border-width: 5px;
-    border-color: #b07fdd;
 }
 
 a:hover,
 .error-backbutton:hover {
     background-color: #ff9c07;
-    border-color: #5d4079;
     transition: 1s;
 }
 
@@ -215,7 +212,8 @@ button.answered{
 
 .error {
     color: white;
-    font-size: 18px;
+    font-size: 24px;
+    margin-bottom: 15px;
     padding-bottom: 10px;
     align-content: center;
 }
