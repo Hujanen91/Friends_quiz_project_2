@@ -91,6 +91,19 @@ header img {
 /* Remove underline on 'back to start' button */
 a {
     text-decoration: none;
+    padding: 12px;
+    margin: 5px 10px 5px 10px;
+    width: 40%;
+    background-color: #9b6500;
+    border-radius: 25px;
+    border-width: 5px;
+    border-color: #b07fdd;
+}
+
+a:hover {
+    background-color: #ff9c07;
+    border-color: #5d4079;
+    transition: 1s;
 }
 
 /* Colors for buttons to highlight right and wrong answers */
@@ -108,8 +121,7 @@ a {
 .try-again-button, 
 .lightning-round,
 .next-button,
-.back-button,
-#error-backbutton {
+.back-button {
     padding: 12px;
     margin: 5px 10px 5px 10px;
     width: 40%;
