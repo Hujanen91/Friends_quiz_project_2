@@ -130,10 +130,10 @@ A clear header that shows the user what the website is all about and some text t
 </details>
 
 ### 404 page
-- If the user types in the wrong adress the 404 page will display to tell the user that the page doesn't exist.
+- If the user types in the wrong adress the 404 page will be displayed to tell the user that the page doesn't exist.
 <details>
 <summary><b>Screenshot of 404 page</b></summary>
-<img src="docs/end_score.png">
+<img src="docs/404_page.png">
 </details>
 
 --- 
@@ -156,15 +156,19 @@ A clear header that shows the user what the website is all about and some text t
 - All code on the site has been validated, HTML,CSS & JavaScript, by use of the W3C validator and Jshint. 
 ### HTML
 - W3C - HTML validator: (https://validator.w3.org/)
-    - W3C Validator for HTML shows no errors or warnings on the index.html file.
-    - The W3C validator for HTML did give 2 errors before I corrected them. A stray div was found and an a linking to them index.html to reset the game was coded inside a button wich wasnt allowed. I removed the div and I removed the a attribute and created a small function in javascript to reset my quiz and send the user to the first page as soon as they pressed the "Back to start" button no matter where in the quiz they are.
+    - W3C Validator for HTML shows no errors or warnings on the index.html and 404.html file.
+    - The W3C validator for index.html HTML did give 2 errors before I corrected them. A stray div was found and an a linking to them index.html to reset the game was coded inside a button wich wasnt allowed. I removed the div and I removed the a attribute and created a small function in javascript to reset my quiz and send the user to the first page as soon as they pressed the "Back to start" button no matter where in the quiz they are.
 <details>
-<summary><b>Image of the HTML validation error</b></summary>
+<summary><b>Image of the index.html HTML validation error</b></summary>
 <img src="docs/error_w3_html.png">
 </details>
 <details>
-<summary><b>Image of the HTML validation after fixing the errors</b></summary>
+<summary><b>Image of the index.html HTML validation after fixing the errors</b></summary>
 <img src="docs/w3_cleared.png">
+</details>
+<details>
+<summary><b>Image of the 404.html HTML validation</b></summary>
+<img src="docs/404_validation.png">
 </details>
 
 ### CSS
@@ -271,6 +275,11 @@ A clear header that shows the user what the website is all about and some text t
 | Finished Section | Finished the game | If the user got 15 correct answer a custom message should appear | The custom message did appear |
 | Finished Section | Click the "Back to start" button | The quiz should reset and the startpage should appear | The quiz did reset and the startpage did appear |
 
+6. 404 page
+
+| **Feature** | **Action** | **Expected result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Display a costumized 404 page | When entering the wrong address | Redirect the user to a 404 page that tells them the page doesn't exist. Tell them to click a button below to return to start | Redirected me to the 404 page and the "Back to start button redirected me back to index.html |
 ---
 
 ## Possible future implementations
@@ -390,3 +399,6 @@ I solved this by adding in a eventListener on the "backButton" in script.js (lin
 ### Readme.md file:
 - I got help with the readme file from CodeInstitutes samplereadme.
     - Link : (https://github.com/code-institute-solutions/samplereadme)
+
+### Acknowledgements
+- My mentor Gareth McGirr for giving great advice, feedback and help during my projects.
