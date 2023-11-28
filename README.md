@@ -279,7 +279,7 @@ A clear header that shows the user what the website is all about and some text t
 
 | **Feature** | **Action** | **Expected result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| Display a costumized 404 page | When entering the wrong address | Redirect the user to a 404 page that tells them the page doesn't exist. Tell them to click a button below to return to start | Redirected me to the 404 page and the "Back to start button redirected me back to index.html |
+| Display a customized 404 page | When entering the wrong address | Redirect the user to a 404 page that tells them the page doesn't exist. Tell them to click a button below to return to start | Redirected me to the 404 page and the "Back to start button redirected me back to index.html |
 ---
 
 ## Possible future implementations
@@ -371,7 +371,9 @@ I solved this by adding in a eventListener on the "backButton" in script.js (lin
 ### Here are the steps to deploy this website to GitHub Pages from its GitHub repository:
 - Log in to GitHub and locate the GitHub Repository.
 - At the top of the Repository, locate the Settings button on the menu.
+- From the menu on left select 'Pages'
 - Under Source, click the dropdown called None and select Main Branch.
+- Click 'save'
 - The page will refresh automatically and generate a link to your website.
 ---
 
